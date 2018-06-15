@@ -1,0 +1,2986 @@
+focus_tree = {
+	id = vegas_nf
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = VEG
+		}
+	}
+	default = no
+	focus = {
+		id = veg_judgement
+		icon = GFX_goal_generic_demand_territory
+		cost = 1
+		x = 21
+		y = 0
+		completion_reward = {
+			country_event = { id = nf_vegas.1 } 
+		}
+
+	}
+	focus = {
+		id = veg_software
+		icon = GFX_goal_generic_demand_territory
+		cost = 1
+		prerequisite = {
+			focus = veg_judgement
+		}
+		x = 21
+		y = 1
+		completion_reward = {
+			country_event = { id = nf_vegas.2 } 
+		}
+
+	}
+	focus = {
+		id = veg_families
+		icon = GFX_goal_VEG_Aligning_the_Families
+		cost = 1
+		prerequisite = {
+			focus = veg_software
+		}
+		x = 21
+		y = 2
+		completion_reward = {
+			country_event = { id = nf_vegas.3 } 
+		}
+
+	}
+	focus = {
+		id = veg_newvegas
+		icon = GFX_goal_generic_demand_territory
+		cost = 1
+		prerequisite = {
+			focus = veg_families
+		}
+		x = 21
+		y = 3
+		completion_reward = {
+			country_event = { id = nf_vegas.7 }
+		}
+
+	}
+	focus = {
+		id = veg_oldauthority
+		icon = GFX_goal_VEG_Old_Authority
+		cost = 8.6
+		prerequisite = {
+			focus = veg_newvegas
+		}
+		mutually_exclusive = {
+			focus = veg_newmanagement
+			focus = veg_couriersix
+		}
+		x = 4
+		y = 4
+		completion_reward = {
+			add_ideas = loyalsubordinates
+		}
+
+	}
+	focus = {
+		id = veg_newmanagement
+		icon = GFX_goal_VEG_New_Management
+		cost = 8.6
+		prerequisite = {
+			focus = veg_newvegas
+		}
+		mutually_exclusive = {
+			focus = veg_oldauthority
+			focus = veg_couriersix
+		}
+		x = 14
+		y = 4
+		completion_reward = {
+			add_ideas = potentialcoup
+		}
+
+	}
+	focus = {
+		id = veg_king
+		icon = GFX_goal_VEG_The_King
+		cost = 8.6
+		available = {
+		    has_idea = kings
+		}
+		prerequisite = {
+			focus = veg_newmanagement
+		}
+		mutually_exclusive = {
+			focus = veg_joker
+		}
+		x = 11
+		y = 5
+		completion_reward = {
+			add_ideas = theking
+		}
+
+	}
+	focus = {
+		id = veg_everyman
+		icon = GFX_goal_VEG_Every_Man_a_King
+		cost = 8.6
+		prerequisite = {
+			focus = veg_king
+		}
+		x = 10
+		y = 6
+		completion_reward = {
+			add_ideas = freesidesupport
+		}
+	}
+	focus = {
+		id = veg_muggers
+		icon = GFX_goal_VEG_Enlist_the_Muggers
+		cost = 8.6
+		prerequisite = {
+			focus = veg_king
+		}
+		x = 13
+		y = 6
+		completion_reward = {
+			custom_effect_tooltip = load_maudsmuggers
+			hidden_effect = { load_oob = maudsmuggers }
+		}
+
+	}
+	focus = {
+		id = veg_followers
+		icon = GFX_goal_VEG_Follower_Support
+		cost = 8.6
+		prerequisite = {
+			focus = veg_muggers
+		}
+		x = 12
+		y = 7
+		completion_reward = {
+			add_ideas = followeradvisors
+			
+			create_corps_commander = {
+				name = "Arcade Gannon"
+				portrait_path = "gfx/leaders/VEG/Portrait_Arcade.dds"
+				skill = 4
+				traits = { }
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 5
+			}
+		}
+
+	}
+	focus = {
+		id = veg_joker
+		icon = GFX_goal_VEG_The_Joker
+		cost = 8.6
+		available = {
+		    has_idea = chairmen
+		}
+		prerequisite = {
+			focus = veg_newmanagement
+		}
+		mutually_exclusive = {
+			focus = veg_king
+		}
+		x = 18
+		y = 5
+		completion_reward = {
+			add_ideas = thejoker
+		}
+
+	}
+	focus = {
+		id = veg_thugs
+		icon = GFX_focus_generic_little_entente
+		cost = 8.6
+		prerequisite = {
+			focus = veg_joker
+		}
+		x = 15
+		y = 6
+		completion_reward = {
+			custom_effect_tooltip = load_bennythugs
+			hidden_effect = { load_oob = bennythugs }
+		}
+
+	}
+	focus = {
+		id = veg_hiredhelp
+		icon = GFX_goal_VEG_Hired_Help
+		cost = 8.6
+		prerequisite = {
+			focus = veg_joker
+		}
+		x = 17
+		y = 6
+		completion_reward = {
+			add_ideas = emilyortal
+		}
+
+	}
+	focus = {
+		id = veg_familyman
+		icon = GFX_goal_VEG_Family_Man
+		cost = 8.6
+		prerequisite = {
+			focus = veg_joker
+		}
+		x = 21
+		y = 6
+		completion_reward = {
+			add_ideas = threefamilies
+		}
+
+	}
+	focus = {
+		id = veg_gomorrahthugs
+		icon = GFX_goal_VEG_Gomorrah
+		cost = 8.6
+		prerequisite = {
+			focus = veg_familyman
+		}
+		mutually_exclusive = {
+			focus = veg_topsthugs
+			focus = veg_ultraluxethugs
+		}
+		x = 19
+		y = 7
+		completion_reward = {
+			custom_effect_tooltip = load_gommorrahthugs
+			hidden_effect = { load_oob = gomorrahthugs }
+		}
+
+	}
+	focus = {
+		id = veg_topsthugs
+		icon = GFX_goal_VEG_The_Tops
+		cost = 8.6
+		prerequisite = {
+			focus = veg_familyman
+		}
+		mutually_exclusive = {
+			focus = veg_ultraluxethugs
+			focus = veg_gomorrahthugs
+		}
+		x = 21
+		y = 7
+		completion_reward = {
+			custom_effect_tooltip = load_topsthugs
+			hidden_effect = { load_oob = topsthugs }
+		}
+
+	}
+	focus = {
+		id = veg_ultraluxethugs
+		icon = GFX_goal_VEG_The_Ultra-Luxe
+		cost = 8.6
+		prerequisite = {
+			focus = veg_familyman
+		}
+		mutually_exclusive = {
+			focus = veg_topsthugs
+			focus = veg_gomorrahthugs
+		}
+		x = 23
+		y = 7
+		completion_reward = {
+			custom_effect_tooltip = load_ultraluxethugs
+			hidden_effect = { load_oob = ultraluxethugs }
+		}
+
+	}
+	focus = {
+		id = veg_compensation
+		icon = GFX_goal_VEG_Family_Compensation
+		cost = 8.6
+		prerequisite = {
+			focus = veg_topsthugs
+			focus = veg_ultraluxethugs
+			focus = veg_gomorrahthugs
+		}
+		x = 21
+		y = 8
+		completion_reward = {
+			add_ideas = repaiddebt
+		}
+
+	}
+	focus = {
+		id = veg_familysupremacy
+		icon = GFX_goal_VEG_Family_Supremacy
+		cost = 8.6
+		prerequisite = {
+			focus = veg_compensation
+		}
+		x = 20
+		y = 9
+		completion_reward = {
+			add_ideas = narcissism
+		}
+
+	}
+	focus = {
+		id = veg_privatearmies
+		icon = GFX_goal_VEG_Private_Armies
+		cost = 8.6
+		prerequisite = {
+			focus = veg_compensation
+		}
+		x = 22
+		y = 9
+		available = {
+			controls_state = 211
+		}
+		completion_reward = {
+			211 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_aligned
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 8.6
+		prerequisite = {
+			focus = veg_privatearmies
+		}
+		x = 22
+		y = 10
+		completion_reward = {
+			swap_ideas = {
+				add_idea = threefamilies2
+				remove_idea = threefamilies
+			}
+		}
+
+	}
+	focus = {
+		id = veg_checkereddevil
+		icon = GFX_goal_VEG_Checkered_Devil
+		cost = 8.6
+		prerequisite = {
+			focus = veg_aligned
+		}
+		prerequisite = {
+			focus = veg_familysupremacy
+		}
+		x = 21
+		y = 11
+		completion_reward = {
+			add_ideas = cultofpersonality
+		}
+
+	}
+	focus = {
+		id = veg_ultraluxe
+		icon = GFX_goal_VEG_The_Ultra-Luxe
+		cost = 8.6
+		prerequisite = {
+			focus = veg_newvegas
+		}
+		x = 28
+		y = 4
+		completion_reward = {
+			211 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_whitegloves
+		icon = GFX_goal_VEG_The_White_Glove_Society
+		cost = 8.6
+		available = {
+		has_idea = whitegloves
+		}
+		prerequisite = {
+			focus = veg_ultraluxe
+		}
+		mutually_exclusive = {
+			focus = veg_khaganate
+		}
+		x = 26
+		y = 5
+		completion_reward = {
+			#show_ideas_tooltip = marjorie'
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = majorie 
+			hidden_effect = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					add_ideas = majorie
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_wealthycontacts
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 8.6
+		prerequisite = {
+			focus = veg_whitegloves
+		}
+		x = 26
+		y = 6
+		available = {
+			has_idea = majorie
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = whitegloves2
+				remove_idea = whitegloves
+			}
+		}
+
+	}
+	focus = {
+		id = veg_meatonthemenu
+		icon = GFX_goal_VEG_The_Human_Banquet
+		cost = 8.6
+		prerequisite = {
+			focus = veg_wealthycontacts
+		}
+		mutually_exclusive = {
+			focus = veg_abandon
+		}
+		x = 25
+		y = 7
+		completion_reward = {
+			swap_ideas = {
+				add_idea = whitegloves3
+				remove_idea = whitegloves2
+			}
+		}
+
+	}
+	focus = {
+		id = veg_abandon
+		icon = GFX_goal_VEG_Abandon_Cannibalism
+		cost = 8.6
+		prerequisite = {
+			focus = veg_wealthycontacts
+		}
+		mutually_exclusive = {
+			focus = veg_meatonthemenu
+		}
+		x = 27
+		y = 7
+		completion_reward = {
+			swap_ideas = {
+				add_idea = whitegloves4
+				remove_idea = whitegloves2
+			}
+		}
+
+	}
+	focus = {
+		id = veg_khaganate
+		icon = GFX_goal_VEG_The_Khaganate
+		cost = 8.6
+		available = {
+		has_idea = khaganate
+		}
+		prerequisite = {
+			focus = veg_ultraluxe
+		}
+		mutually_exclusive = {
+			focus = veg_whitegloves
+		}
+		x = 29
+		y = 5
+		completion_reward = {
+			custom_effect_tooltip = available_army_chief
+			show_ideas_tooltip = papa_khan
+			hidden_effect = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					add_ideas = papa_khan
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_pickelhaube
+		icon = GFX_goal_VEG_Fancy_Pickelhaubes
+		cost = 8.6
+		prerequisite = {
+			focus = veg_khaganate
+		}
+		x = 29
+		y = 6
+		available = {
+			has_idea = papa_khan
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = khaganate2
+				remove_idea = khaganate
+			}
+		}
+
+	}
+	focus = {
+		id = veg_buryhatchet
+		icon = GFX_goal_VEG_Burying_the_Hatchet
+		cost = 8.6
+		prerequisite = {
+			focus = veg_pickelhaube
+		}
+		x = 29
+		y = 7
+		completion_reward = {
+			swap_ideas = {
+				add_idea = khaganate3
+				remove_idea = khaganate2
+			}
+		}
+
+	}
+	focus = {
+		id = veg_tops
+		icon = GFX_goal_VEG_The_Tops
+		cost = 8.6
+		prerequisite = {
+			focus = veg_newvegas
+		}
+		x = 32
+		y = 4
+		completion_reward = {
+			211 = {	
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+		
+
+	}
+	focus = {
+		id = veg_chairmen
+		icon = GFX_goal_VEG_The_Chairmen
+		cost = 8.6
+		available = {
+		has_idea = chairmen
+		}
+		prerequisite = {
+			focus = veg_tops
+		}
+		mutually_exclusive = {
+			focus = veg_kings
+		}
+		x = 31
+		y = 5
+		completion_reward = {
+			#show_ideas_tooltip = benny
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = benny 
+			hidden_effect = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					add_ideas = benny
+				}
+			}
+		}
+	}
+	focus = {
+		id = veg_arms
+		icon = GFX_goal_generic_ammo_boxes_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_chairmen
+		}
+		available = {
+			has_idea = benny
+		}
+		x = 31
+		y = 6
+		completion_reward = {
+			211 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_newdeal
+		icon = GFX_goal_generic_military_industry_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_arms
+		}
+		x = 31
+		y = 7
+		completion_reward = {
+			add_ideas = bennynewdeal
+		}	
+
+	}
+	focus = {
+		id = veg_kings
+		icon = GFX_goal_VEG_The_Kings
+		cost = 8.6
+		available = {
+		has_idea = kings
+		}
+		prerequisite = {
+			focus = veg_tops
+		}
+		mutually_exclusive = {
+			focus = veg_chairmen
+		}
+		x = 33
+		y = 5
+		completion_reward = {
+			#show_ideas_tooltip = theking
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = the_king
+			hidden_effect = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					add_ideas = the_king
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_westside
+		icon = GFX_goal_generic_slums_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_kings
+		}
+		x = 33
+		y = 6
+		available = {
+			has_idea = the_king
+			controls_state = 313
+		}
+		completion_reward = {
+			313 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_north
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_westside
+		}
+		x = 33
+		y = 7
+		available = {
+			controls_state = 344
+		}
+		completion_reward = {
+			344 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = {
+						all_provinces = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_gomorrah
+		icon = GFX_goal_VEG_Gomorrah
+		cost = 8.6
+		prerequisite = {
+			focus = veg_newvegas
+		}
+		x = 36
+		y = 4
+		available = {
+			controls_state = 211
+		}
+		completion_reward = {
+			211 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_consig
+		icon = GFX_goal_VEG_The_Consiglieres
+		cost = 8.6
+		available = {
+		has_idea = consigs
+		}
+		prerequisite = {
+			focus = veg_gomorrah
+		}
+		mutually_exclusive = {
+			focus = veg_omertas
+		}
+		x = 35
+		y = 5
+		completion_reward = {
+			#show_ideas_tooltip = motorunner
+			custom_effect_tooltip = available_high_command
+			show_ideas_tooltip = motor_runner
+			hidden_effect = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					add_ideas = motor_runner
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_skullsandsuits
+		icon = GFX_goal_VEG_Skulls_and_Suits
+		cost = 8.6
+		prerequisite = {
+			focus = veg_consig
+		}
+		available = {
+			has_idea = motor_runner
+		}
+		x = 35
+		y = 6
+		completion_reward = {
+			swap_ideas = {
+				add_idea = consigs2
+				remove_idea = consigs
+			}
+		}
+
+	}
+	focus = {
+		id = veg_cologne
+		icon = GFX_goal_VEG_Killer_Cologne
+		cost = 8.6
+		prerequisite = {
+			focus = veg_skullsandsuits
+		}
+		x = 35
+		y = 7
+		completion_reward = {
+			swap_ideas = {
+				add_idea = consigs3
+				remove_idea = consigs2
+			}
+		}
+
+	}
+	focus = {
+		id = veg_house
+		icon = GFX_goal_VEG_The_House
+		cost = 8.6
+		prerequisite = {
+			focus = veg_oldauthority
+		}
+		x = 4
+		y = 5
+		completion_reward = {
+			add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = veg_nwo
+		icon = GFX_goal_VEG_New_World_Order
+		cost = 8.6
+		prerequisite = {
+			focus = veg_house
+		}
+		mutually_exclusive = {
+			focus = veg_economy
+		}
+		x = 2
+		y = 6
+		completion_reward = {
+			add_ideas = militarypriorities
+		}
+
+	}
+	focus = {
+		id = veg_economy
+		icon = GFX_goal_VEG_Economic_Miracle
+		cost = 8.6
+		prerequisite = {
+			focus = veg_house
+		}
+		mutually_exclusive = {
+			focus = veg_nwo
+		}
+		x = 6
+		y = 6
+		completion_reward = {
+			add_ideas = goodbusiness
+		}
+
+	}
+	focus = {
+		id = veg_platinumchip
+		icon = GFX_goal_VEG_The_Platinum_Chip
+		cost = 8.6
+		prerequisite = {
+			focus = veg_house
+		}
+		available = {
+			OR = {
+				controls_state = 252
+				252 = {
+					is_controlled_by = NCR
+				}
+				252 = {
+					is_controlled_by = CES
+				}
+			}
+		}
+		x = 4
+		y = 7
+		completion_reward = {
+			country_event = nf_vegas.16
+		}
+
+	}
+	focus = {
+		id = veg_vault
+		icon = GFX_goal_VEG_The_Vault
+		cost = 8.6
+		available = {
+			has_country_flag = veg_chip_delivered
+			has_idea = platinumOS
+		}
+		prerequisite = {
+			focus = veg_platinumchip
+		}
+		x = 4
+		y = 8
+		completion_reward = {
+			country_event = nf_vegas.17
+		}
+
+	}
+	#focus = {
+	#	id = veg_prime
+	#	icon = GFX_goal_VEG_Vegas_Prime
+	#	cost = 8.6
+	#	prerequisite = {
+	#		focus = veg_vault
+	#	}
+	#	x = 4
+	#	y = 9
+	#	completion_reward = {
+	#		country_event = nf_vegas.18
+	#	}
+	#
+	#}
+	focus = {
+		id = veg_securenorth
+		icon = GFX_goal_generic_ideological_fury_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_nwo
+		}
+		bypass = {
+			NOT = {
+				country_exists = KHA
+			}
+		}
+		x = 2
+		y = 7
+		will_lead_to_war_with = KHA
+		completion_reward = {
+			create_wargoal = {
+				target = KHA 
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = veg_rockthesuburbs
+		icon = GFX_goal_generic_slums_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_nwo
+		}
+		bypass = {
+			NOT = {
+				country_exists = FIE
+			}
+		}
+		x = 0
+		y = 7
+		will_lead_to_war_with = FIE
+		completion_reward = {
+			create_wargoal = {
+				target = FIE 
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = veg_secure
+		icon = GFX_goal_generic_major_war
+		cost = 8.6
+		prerequisite = {
+			focus = veg_securenorth
+		}
+		prerequisite = {
+			focus = veg_rockthesuburbs
+		}
+		mutually_exclusive = {
+			focus = veg_clean
+		}
+		bypass = {
+			NOT = {
+				country_exists = DAM
+			}
+		}
+		x = 0
+		y = 8
+		will_lead_to_war_with = DAM
+		completion_reward = {
+			create_wargoal = {
+				target = DAM 
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = veg_clean
+		icon = GFX_goal_generic_major_war
+		cost = 8.6
+		prerequisite = {
+			focus = veg_rockthesuburbs
+		}
+		prerequisite = {
+			focus = veg_securenorth
+		}
+		mutually_exclusive = {
+			focus = veg_secure
+		}
+		bypass = {
+			NOT = {
+				country_exists = MRA
+			}
+		}
+		x = 2
+		y = 8
+		will_lead_to_war_with = MRA
+		completion_reward = {
+			create_wargoal = {
+				target = MRA 
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = veg_broken
+		icon = GFX_goal_VEG_Broken_Steel
+		cost = 8.6
+		prerequisite = {
+			focus = veg_secure
+		}
+		bypass = {
+			NOT = {
+				country_exists = MOJ
+			}
+		}
+		x = 0
+		y = 9
+		will_lead_to_war_with = MOJ
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = MOJ
+			}
+		}
+
+	}
+	focus = {
+		id = veg_reborn
+		icon = GFX_goal_VEG_Hidden_Valley_Reborn
+		cost = 8.6
+		prerequisite = {
+			focus = veg_broken
+		}
+		x = 0
+		y = 10
+		available = {
+			owns_state = 46
+			controls_state = 46
+		}
+		completion_reward = {
+			46 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+				add_resource = {
+					type = advanced_technology
+					amount = 8
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_hopeville
+		icon = GFX_goal_generic_ammo_boxes_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_clean
+		}
+		x = 2
+		y = 9
+		will_lead_to_war_with = HOP
+		bypass = {
+			HOP = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = HOP
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = veg_ashton
+		icon = GFX_goal_generic_metal_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_hopeville
+		}
+		x = 2
+		y = 10
+		will_lead_to_war_with = ASH
+		bypass = {
+			ASH = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = ASH
+				type = annex_everything
+			}
+		}
+
+	}
+	focus = {
+		id = veg_architect
+		icon = GFX_goal_VEG_Architect_of_Destiny
+		cost = 8.6
+		prerequisite = {
+			focus = veg_reborn
+			focus = veg_ashton
+		}
+		x = 1
+		y = 11
+		completion_reward = {
+			add_ideas = housealwayswins
+		}
+
+	}
+	focus = {
+		id = veg_newvegastreaty
+		icon = GFX_goal_generic_supplies_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_economy
+		}
+		available = {
+			NCR = {
+				owns_state = 252
+			}
+		}
+		x = 6
+		y = 7
+		completion_reward = {
+			253 = {
+				add_resource = {
+					type = electricity
+					amount = 20
+				}
+			}
+			211 = {
+				add_resource = {
+					type = electricity
+					amount = 5
+				}
+			}
+			NCR = {
+				give_guarantee = VEG
+			}
+			VEG = {
+				give_military_access = NCR
+			}
+			
+		}
+
+	}
+	focus = {
+		id = veg_ncrtradedeal
+		icon = GFX_goal_generic_NCR_diplomatic_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_newvegastreaty
+		}
+		x = 6
+		y = 8
+		bypass = {
+			NCR = {
+				exists = no
+			}
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = goodbusiness
+				add_idea = goodbusiness2
+			}
+		}
+
+	}
+	focus = {
+		id = veg_ncrrail
+		icon = GFX_goal_generic_metal_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_ncrtradedeal
+		}
+		x = 6
+		y = 9
+		available = {
+			controls_state = 211
+		}
+		completion_reward = {
+			211 = {
+				add_resource = {
+					type = metal
+					amount = 16
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_ncrembassy
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 8.6
+		prerequisite = {
+			focus = veg_ncrrail
+		}
+		available = {
+			419 = {
+				is_owned_by = NCR
+				is_controlled_by = NCR
+			}
+		}
+		x = 6
+		y = 10
+		completion_reward = {
+			211 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex 
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_ncrstatehood
+		icon = GFX_goal_generic_NCR_diplomatic_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_ncrembassy
+		}
+		x = 6
+		y = 11
+		bypass = {
+			NCR = { exists = no }
+		}
+		completion_reward = {
+			NCR = {
+				country_event = nf_vegas.53
+
+			}
+		}
+
+	}
+	focus = {
+		id = veg_prepcity
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_economy
+		}
+		x = 8
+		y = 7
+		available = {
+			controls_state = 211
+		}
+		completion_reward = {
+			211 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_segregate
+		icon = GFX_goal_generic_walls_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_prepcity
+		}
+		mutually_exclusive = {
+			focus = veg_revitalize
+		}
+		x = 8
+		y = 8
+		completion_reward = {
+			add_ideas = wealthyclientele
+		}
+	}
+	focus = {
+		id = veg_revitalize
+		icon = GFX_goal_generic_slums_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_prepcity
+			focus = veg_everyman
+		}
+		mutually_exclusive = {
+			focus = veg_segregate
+		}
+		x = 10
+		y = 8
+		completion_reward = {
+			add_ideas = middleclassclientele
+		}
+
+	}
+	focus = {
+		id = veg_vault21
+		icon = GFX_goal_VEG_Vault_21
+		cost = 8.6
+		prerequisite = {
+			focus = veg_segregate
+			focus = veg_revitalize
+		}
+		x = 9
+		y = 9
+		completion_reward = {
+			country_event = nf_vegas.9
+		}
+	}
+	focus = {
+		id = veg_cerulean
+		icon = GFX_goal_generic_robots_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_vault21
+		}
+		x = 8
+		y = 10
+		available = {
+			controls_state = 211
+		}
+		completion_reward = {
+			211 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_industry
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_vault21
+		}
+		x = 10
+		y = 10
+		available = {
+			controls_state = 211
+		}
+		completion_reward = {
+			211 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_followersupport
+		icon = GFX_focus_research
+		cost = 8.6
+		prerequisite = {
+			focus = veg_cerulean
+		}
+		x = 8
+		y = 11
+		completion_reward = {
+			add_ideas = followerknowledge
+		}
+
+	}
+	focus = {
+		id = veg_walls
+		icon = GFX_goal_generic_walls_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_industry
+		}
+		x = 10
+		y = 11
+		completion_reward = {
+			add_ideas = concretefortress
+		}
+
+	}
+	focus = {
+		id = veg_securitron
+		icon = GFX_goal_generic_data_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_muggers
+		}
+		x = 14
+		y = 7
+		completion_reward = {
+			add_political_power = 100
+		}
+
+	}
+	focus = {
+		id = veg_vic
+		icon = GFX_goal_VEG_General_Victor
+		cost = 8.6
+		prerequisite = {
+			focus = veg_followers
+		}
+		prerequisite = {
+			focus = veg_securitron
+		}
+		x = 13
+		y = 8
+		completion_reward = {
+			country_event = nf_vegas.10
+		}
+
+	}
+	focus = {
+		id = veg_first
+		icon = GFX_goal_VEG_Vegas_First
+		cost = 8.6
+		prerequisite = {
+			focus = veg_vic
+		}
+		mutually_exclusive = {
+			focus = veg_mojave
+		}
+		x = 12
+		y = 9
+		completion_reward = {
+			add_ideas = unifiedvegas
+		}
+
+	}
+	focus = {
+		id = veg_mojave
+		icon = GFX_goal_VEG_Mojave_Alliance
+		cost = 8.6
+		prerequisite = {
+			focus = veg_vic
+		}
+		mutually_exclusive = {
+			focus = veg_first
+		}
+		bypass = {
+			NOT = {
+				country_exists = MOJ
+			}
+		}
+		x = 14
+		y = 9
+		completion_reward = {
+		create_faction = mojave_alliance
+			if = {
+				limit = {
+					MOJ = {
+						is_ai = yes
+					}
+				}
+				add_to_faction = MOJ
+				add_opinion_modifier = { target = MOJ modifier = mojavepactjoined }
+				MOJ = {
+				add_opinion_modifier = { target = VEG modifier = mojavepactjoined }
+				}
+			}
+			
+			if = {
+				limit = {
+					MOJ = {
+						is_ai = no
+					}
+				}
+				MOJ = {
+					country_event = { id = nf_vegas.8 }
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_raiderend
+		icon = GFX_goal_generic_major_war
+		cost = 8.6
+		prerequisite = {
+			focus = veg_first
+		}
+		bypass = {
+			NOT = {
+				country_exists = FIE
+				country_exists = KHA
+			}
+		}
+		x = 12
+		y = 10
+		will_lead_to_war_with = FIE
+		will_lead_to_war_with = KHA
+		completion_reward = {
+		add_state_core = 380
+		add_state_core = 12
+		add_state_core = 106
+			create_wargoal = {
+				type = annex_everything
+				target = FIE
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KHA
+			}
+		}
+
+	}
+	focus = {
+		id = veg_mojavesecond
+		icon = GFX_goal_generic_major_war
+		cost = 8.6
+		prerequisite = {
+			focus = veg_raiderend
+			focus = veg_dambusters
+		}
+		
+		bypass = {
+			NOT = {
+				country_exists = MRA
+			}
+		}
+		x = 12
+		y = 12
+		will_lead_to_war_with = MRA
+		completion_reward = {
+		add_state_core = 533
+		add_state_core = 272
+		add_state_core = 181
+		add_state_core = 206
+		add_state_core = 419
+		add_state_core = 552
+			create_wargoal = {
+				type = annex_everything
+				target = MRA
+			}
+		}
+
+	}
+	focus = {
+		id = veg_dambusters
+		icon = GFX_goal_generic_major_alliance
+		cost = 8.6
+		prerequisite = {
+			focus = veg_mojave
+		}
+		bypass = {
+			NOT = {
+				country_exists = DAM
+			}
+		}
+		x = 14
+		y = 10
+		completion_reward = {
+			if = {
+				limit = {
+					DAM = {
+						is_ai = yes
+					}
+				}
+				add_to_faction = DAM
+			}
+			
+			if = {
+				limit = {
+					DAM = {
+						is_ai = no
+					}
+				}
+				DAM = {
+					country_event = { id = nf_vegas.8 }
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_mojavesecure
+		icon = GFX_goal_generic_military_deal
+		cost = 8.6
+		prerequisite = {
+			focus = veg_dambusters
+		}
+		bypass = {
+			NOT = {
+				country_exists = MRA
+			}
+		}
+		x = 14
+		y = 13
+		completion_reward = {
+		    MOJ = {
+		        country_event = nf_vegas.21
+		    }
+		}
+   }
+	focus = {
+		id = veg_assassinate
+		icon = GFX_goal_VEG_Assassinate_House
+		cost = 8.6
+		prerequisite = {
+			focus = veg_mojavesecond
+			focus = veg_mojavesecure
+		}
+		mutually_exclusive = {
+			focus = veg_warforvegas
+		}
+		available = {
+			people > 0.7
+		}
+		x = 14
+		y = 14
+		completion_reward = {
+			kill_country_leader = yes
+			set_country_flag = theking
+			set_politics = {
+				ruling_party = people 
+			}
+		}
+
+	}
+	focus = {
+		id = veg_warforvegas
+		icon = GFX_goal_VEG_War_for_Vegas
+		cost = 8.6
+		prerequisite = {
+			focus = veg_mojavesecure
+			focus = veg_mojavesecond
+		}
+		available = {
+			people > 0.5
+		}
+		mutually_exclusive = {
+			focus = veg_assassinate
+		}
+		x = 12
+		y = 14
+		completion_reward = {
+			country_event = nf_vegas.15
+		}
+	}
+	focus = {
+		id = veg_peoplesvegas
+		icon = GFX_goal_VEG_Vegas_for_the_People
+		cost = 8.6
+		prerequisite = {
+			focus = veg_warforvegas
+			focus = veg_assassinate
+		}
+		x = 13
+		y = 15
+		completion_reward = {
+			add_ideas = trueindependence
+			remove_ideas = potentialcoup
+		}
+	}
+	focus = {
+		id = veg_yesman
+		icon = GFX_goal_VEG_Yes_Man
+		cost = 8.6
+		prerequisite = {
+			focus = veg_hiredhelp
+		}
+		x = 17
+		y = 7
+		completion_reward = {
+			add_ideas = yesman
+			
+			add_popularity = {
+				ideology = elites
+				popularity = 0.05
+			}
+		}
+	}
+	focus = {
+		id = veg_lowfriends
+		icon = GFX_goal_generic_ideological_fury_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_yesman
+		}
+		mutually_exclusive = {
+			focus = veg_highfriends
+		}
+		x = 16
+		y = 8
+		available = {
+		    VEG = {
+			    has_idea = khaganate
+		    }
+		}
+		completion_reward = {
+			country_event = nf_vegas.11
+		}
+
+   }
+	focus = {
+		id = veg_highfriends
+		icon = GFX_goal_generic_ideological_fury_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_yesman
+		}
+		mutually_exclusive = {
+			focus = veg_lowfriends
+		}
+		available = {
+			has_idea = benny
+		}
+		x = 18
+		y = 8
+		completion_reward = {
+			country_event = nf_vegas.12
+		}
+		
+	}
+	focus = {
+		id = veg_wrongpackage
+		icon = GFX_goal_VEG_Wrong_Package
+		cost = 8.6
+		prerequisite = {
+			focus = veg_lowfriends
+			focus = veg_highfriends
+		}
+		x = 17
+		y = 9
+		completion_reward = {
+			country_event = nf_vegas.13
+		}
+	}
+	focus = {
+		id = veg_crackthevault
+		icon = GFX_goal_bos_study_securitron_software
+		cost = 8.6
+		prerequisite = {
+			focus = veg_wrongpackage
+		}
+		x = 17
+		y = 10
+		completion_reward = {
+		   country_event = nf_vegas.47
+	    }
+	}	
+	focus = {
+		id = veg_allin
+		icon = GFX_goal_VEG_All-In
+		cost = 8.6
+		prerequisite = {
+			focus = veg_crackthevault
+		}
+		available = {
+			elites > 0.5
+		}
+		x = 17
+		y = 11
+		completion_reward = {
+			kill_country_leader = yes
+			set_politics = {
+				ruling_party = elites 
+			}
+		}
+
+	}
+	focus = {
+		id = veg_ringading
+		icon = GFX_goal_VEG_Ring-a-Ding-Ding
+		cost = 8.6
+		prerequisite = {
+			focus = veg_allin
+		}
+		x = 16
+		y = 12
+		completion_reward = {
+			add_ideas = brightlights
+			remove_ideas = potentialcoup
+		}
+	}
+	focus = {
+		id = veg_nevadapact
+		icon = GFX_goal_tripartite_pact
+		cost = 8.6
+		prerequisite = {
+			focus = veg_allin
+		}
+		x = 18
+		y = 12
+		bypass = {
+			AND = {
+				NOT = { country_exists = DES }
+				NOT = { country_exists = NEW }
+				NOT = { country_exists = VLT }
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_global_flag = nevadapact
+				}
+				if = {
+					limit = {
+						NEW = {
+							is_faction_leader = yes
+						}
+					}
+					NEW = {
+						country_event = { days = 1 id = nf_vegas.37 }
+					}
+				}
+				
+				if = {
+					limit = {
+						DES = {
+							is_faction_leader = yes
+						}
+					}
+					DES = {
+						country_event = { days = 1 id = nf_vegas.37 }
+					}
+				}
+			}
+			
+			if = {
+				limit = {
+					NOT = { 
+						has_global_flag = nevadapact
+					}
+				}
+				VEG = {
+				country_event = { days = 1 id = nf_vegas.30 }
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_omertas
+		icon = GFX_goal_VEG_The_Omertas
+		cost = 8.6
+		available = {
+		has_idea = omertas
+		}
+		prerequisite = {
+			focus = veg_gomorrah
+		}
+		mutually_exclusive = {
+			focus = veg_consig
+		}
+		x = 37
+		y = 5
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = nero
+			hidden_effect = {
+				if = {
+					limit = {
+						is_ai = yes
+					}
+					add_ideas = nero
+				}
+			}
+		}
+	}
+	focus = {
+		id = veg_addiction
+		icon = GFX_goal_VEG_Addiction_For_Sale
+		cost = 8.6
+		prerequisite = {
+			focus = veg_omertas
+		}
+		x = 37
+		y = 6
+		available = {
+			has_idea = nero
+		}
+		completion_reward = {
+			swap_ideas = {
+				add_idea = omertas2
+				remove_idea = omertas
+			}
+		}
+	}
+	focus = {
+		id = veg_mobsters
+		icon = GFX_goal_generic_common_firearms_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_addiction
+		}
+		x = 37
+		y = 7
+		available = {
+			controls_state = 211
+		}
+		completion_reward = {
+			211 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+				}
+			}
+			
+			add_equipment_to_stockpile = {
+				type = ballistic_equipment_2
+				amount = 500
+				producer = VEG
+			}
+		}
+	}
+	focus = {
+		id = veg_lucky38
+		icon = GFX_goal_VEG_The_Lucky_38
+		cost = 8.6
+		prerequisite = {
+			focus = veg_newdeal
+			focus = veg_north
+		}
+		prerequisite = {
+			focus = veg_cologne
+			focus = veg_mobsters
+		}
+		prerequisite = {
+			focus = veg_abandon
+			focus = veg_meatonthemenu
+			focus = veg_buryhatchet
+		}
+		x = 32
+		y = 8
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = veg_robco
+		icon = GFX_goal_generic_robots_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_lucky38
+		}
+		x = 26
+		y = 9
+		available = {
+			controls_state = 211
+		}
+		completion_reward = {
+			211 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_ideas = robcoreborn
+		}
+	}
+	focus = {
+		id = veg_firstbatch
+		icon = GFX_focus_generic_little_entente
+		cost = 8.6
+		prerequisite = {
+			focus = veg_robco
+		}
+		x = 25
+		y = 10
+		completion_reward = {
+			custom_effect_tooltip = load_firstbatch
+			hidden_effect = { load_oob = firstbatch }
+		}
+	}
+	focus = {
+		id = veg_expansion
+		icon = GFX_goal_generic_military_industry_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_robco
+		}
+		x = 27
+		y = 10
+		available = {
+			controls_state = 211
+		}
+		completion_reward = {
+			211 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_smallarms
+		icon = GFX_goal_generic_regular_firearms_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_lucky38
+		}
+		x = 30
+		y = 9
+		completion_reward = {
+			army_experience = 10
+			add_tech_bonus = {
+				name = ballistic_bonus
+				bonus = 0.5
+				uses = 2
+				category = ballistic_weaponry_tech
+			}
+		}
+
+	}
+	focus = {
+		id = veg_rapidresponse
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 8.6
+		prerequisite = {
+			focus = veg_lucky38
+		}
+		x = 34
+		y = 9
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = VEG
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = veg_fourthfam
+		icon = GFX_goal_bos_the_mojave_signal
+		cost = 8.6
+		prerequisite = {
+			focus = veg_lucky38
+		}
+		x = 37
+		y = 9
+		available = {
+			VEG = {
+				has_country_flag = theking 
+				is_in_faction_with = MOJ
+			}
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = veg_elijah
+		icon = GFX_goal_bos_elijah's_genius
+		cost = 8.6
+		prerequisite = {
+			focus = veg_fourthfam
+		}
+		x = 37
+		y = 10
+		completion_reward = {
+			add_ideas = vegaselijahrestoration
+		}
+	}
+	focus = {
+		id = veg_t45d
+		icon = GFX_goal_generic_t45d_power_armour_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_elijah
+		}
+		x = 37
+		y = 11
+		completion_reward = {
+			set_technology = { power_armour_t45d = 1 }
+		}
+	}
+	focus = {
+		id = veg_bossecurity
+		icon = GFX_goal_generic_t51b_power_armour_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_t45d
+		}
+		x = 37
+		y = 12
+		completion_reward = {
+			custom_effect_tooltip = load_vegassecurity
+			hidden_effect = { load_oob = vegassecurity }
+		}
+	}
+	focus = {
+		id = veg_warlabs
+		icon = GFX_focus_wonderweapons
+		cost = 8.6
+		prerequisite = {
+			focus = veg_smallarms
+		}
+		prerequisite = {
+			focus = veg_rapidresponse
+		}
+		x = 32
+		y = 10
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = veg_justlikethesim
+		icon = GFX_goal_generic_data_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_warlabs
+		}
+		x = 32
+		y = 11
+		completion_reward = {
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 0.75
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = veg_security
+		icon = GFX_goal_rhineland
+		cost = 8.6
+		prerequisite = {
+			focus = veg_smallarms
+		}
+		x = 30
+		y = 10
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_tech_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_tech
+			}
+		}
+	}
+	focus = {
+		id = veg_vehicles
+		icon = GFX_goal_generic_production
+		cost = 8.6
+		prerequisite = {
+			focus = veg_security
+		}
+		x = 30
+		y = 11
+		completion_reward = {
+			add_tech_bonus = {
+				name = vehicle_tech_bonus
+				bonus = 0.5
+				uses = 2
+				category = vehicle_tech
+			}
+		}
+	}
+	focus = {
+		id = veg_mobile
+		icon = GFX_goal_generic_army_motorized
+		cost = 8.6
+		prerequisite = {
+			focus = veg_vehicles
+		}
+		x = 30
+		y = 12
+		completion_reward = {
+			custom_effect_tooltip = load_vegasmobilewarfare
+			hidden_effect = { load_oob = vegasmobilewarfare }
+		}
+
+	}
+	focus = {
+		id = veg_boomers
+		icon = GFX_goal_generic_air_doctrines_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_mobile
+		}
+		x = 32
+		y = 13
+		completion_reward = {
+			add_ideas = boomeragreement
+		}
+	}
+	focus = {
+		id = veg_militia
+		icon = GFX_goal_generic_common_firearms_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_mobile
+		}
+		x = 30
+		y = 13
+		completion_reward = {
+			add_ideas = militiaarms
+		}
+	}
+	focus = {
+		id = veg_lakemead
+		icon = GFX_goal_generic_air_bomber
+		cost = 8.6
+		prerequisite = {
+			focus = veg_boomers
+		}
+		x = 32
+		y = 14
+		completion_reward = {
+			custom_effect_tooltip = load_lakemead
+			hidden_effect = { load_oob = lakemead }
+		}
+
+	}
+	focus = {
+		id = veg_handh
+		icon = GFX_goal_generic_military_industry_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_rapidresponse
+		}
+		x = 34
+		y = 10
+		available = {
+			controls_state = 211
+		}
+		completion_reward = {
+			211 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			add_ideas = handh
+		}
+	}
+	focus = {
+		id = veg_zappsigns
+		icon = GFX_goal_generic_electricity_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_handh
+		}
+		x = 34
+		y = 11
+		available = {
+			controls_state = 211
+		}
+		completion_reward = {
+			211 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = veg_sewage
+		icon = GFX_goal_generic_slums_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_zappsigns
+		}
+		x = 34
+		y = 12
+		completion_reward = {
+			add_ideas = sanitarycity
+		}
+	}
+	focus = {
+		id = veg_securitrons1
+		icon = GFX_goal_bos_study_securitron_software
+		cost = 8.6
+		prerequisite = {
+			focus = veg_expansion
+		}
+		x = 27
+		y = 11
+		completion_reward = {
+			add_ideas = securitron1
+		}
+	}
+	focus = {
+		id = veg_handys
+		icon = GFX_goal_generic_production
+		cost = 8.6
+		prerequisite = {
+			focus = veg_firstbatch
+		}
+		x = 25
+		y = 11
+		completion_reward = {
+			add_ideas = mrhandys
+		}
+	}
+	focus = {
+		id = veg_gutsys
+		icon = GFX_goal_generic_robots_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_handys
+		}
+		x = 25
+		y = 12
+		completion_reward = {
+			add_ideas = mrgutsys
+		}
+	}
+	focus = {
+		id = veg_expandeddeployment
+		icon = GFX_goal_bos_study_securitron_software
+		cost = 8.6
+		prerequisite = {
+			focus = veg_securitrons1
+		}
+		x = 27
+		y = 12
+		completion_reward = {
+			swap_ideas ={
+				add_idea = securitron2
+				remove_idea = securitron1
+			}
+		}
+	}
+	focus = {
+		id = veg_robotstrats
+		icon = GFX_goal_generic_land_doctrines_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_gutsys
+		}
+		x = 25
+		y = 13
+		completion_reward = {
+			add_ideas = robobrains
+		}
+	}
+	focus = {
+		id = veg_sentrybots
+		icon = GFX_goal_generic_advanced_firearms_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_robotstrats
+		}
+		prerequisite = {
+			focus = veg_expandeddeployment
+		}
+		x = 26
+		y = 14
+		completion_reward = {
+			add_ideas = sentrybots
+		}
+	}
+################################################################################################################
+################################################################################################################
+################################################################################################################
+################################################################################################################
+################################################################################################################
+	focus = {
+		id = veg_couriersix
+		icon = GFX_goal_VEG_The_Platinum_Chip
+		cost = 8.6
+		prerequisite = {
+			focus = veg_newvegas
+		}
+		mutually_exclusive = {
+			focus = veg_newmanagement
+			focus = veg_oldauthority
+		}
+		x = -7
+		y = 4
+		completion_reward = {
+		country_event = { id = nf_couriersix.1 } 
+		}
+	}
+	focus = {
+		id = veg_kickinthehead
+		icon = GFX_goal_VEG_Wrong_Package
+		cost = 8.6
+		prerequisite = {
+			focus = veg_couriersix
+		}
+		x = -7
+		y = 5
+		completion_reward = {
+		country_event = { id = nf_couriersix.2 } 
+		}
+	}
+	focus = {
+		id = veg_theywentthataway
+		icon = GFX_goal_NCR_Buyout
+		cost = 8.6
+		prerequisite = {
+			focus = veg_kickinthehead
+		}
+		x = -7
+		y = 6
+		completion_reward = {
+		country_event = { id = nf_couriersix.3 } 
+		}
+	}
+	focus = {
+		id = veg_ringadingding
+		icon = GFX_goal_VEG_The_Tops
+		cost = 8.6
+		prerequisite = {
+			focus = veg_theywentthataway
+		}
+		x = -7
+		y = 7
+		completion_reward = {
+		country_event = { id = nf_couriersix.4 } 
+		}
+	}
+	focus = {
+		id = veg_fortherepublic1
+		icon = GFX_goal_NCR_Allisgood
+		cost = 8.6
+		available = {
+		    has_idea = crockersinvitation
+		}
+		prerequisite = {
+			focus = veg_ringadingding
+		}
+		mutually_exclusive = {
+			focus = veg_wildcard1
+			focus = veg_renderuntocaesar1
+		}
+		x = -9
+		y = 8
+		completion_reward = {
+			NCR {
+				add_to_faction = VEG				
+			}
+		remove_ideas = dominoeffect
+		if = {
+			limit = {
+				VEG = {
+					has_idea = unstableOS
+				}
+			}
+			remove_ideas = unstableOS 
+			}
+		
+			if = {
+			limit = {
+				VEG = {
+					has_idea = stableOS
+				}
+			}
+			remove_ideas = stableOS
+			}
+		add_ideas = gunrunnerliscense
+		country_event = { id = nf_couriersix.666 }
+		}
+	}
+	focus = {
+		id = veg_fortherepublic2
+		icon = GFX_goal_VEG_The_Kings
+		cost = 8.6
+		prerequisite = {
+			focus = veg_fortherepublic1
+		}
+		x = -9
+		y = 9
+		completion_reward = {	
+		add_ideas = kingsarmy
+		211 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 5
+			category = infantry_tech
+			}
+		}
+	}
+	focus = {
+		id = veg_fortherepublic3
+		icon = GFX_goal_NCR_Diplomacy
+		cost = 8.6
+		prerequisite = {
+			focus = veg_fortherepublic2
+		}
+		prerequisite = { focus = veg_volare }
+		x = -9
+		y = 10
+		completion_reward = {
+		add_political_power = -100
+		add_ideas = mojaveroads
+		}
+	}
+	focus = {
+		id = veg_fortherepublic4
+		icon = GFX_goal_NCR_Bears_Roar
+		cost = 8.6
+		available = {
+			date > 2279.1.1
+		}
+		prerequisite = {
+			focus = veg_fortherepublic3
+		}
+		x = -9
+		y = 11
+		completion_reward = {
+		annex_country = { target = HOP transfer_troops = yes }
+		annex_country = { target = ASH transfer_troops = yes }
+		add_state_core = 592
+		add_state_core = 13
+			
+		}
+	}
+	focus = {
+		id = veg_renderuntocaesar1
+		icon = GFX_goal_legion_spqr
+		cost = 8.6
+		available = {
+		    has_idea = markofcaesar
+		}
+		prerequisite = {
+			focus = veg_ringadingding
+		}
+		mutually_exclusive = {
+			focus = veg_wildcard1
+			focus = veg_fortherepublic1
+		}
+		x = -11
+		y = 8
+		completion_reward = {
+			CES {
+				add_to_faction = VEG
+			}
+		remove_ideas = dominoeffect
+		if = {
+			limit = {
+				VEG = {
+					has_idea = unstableOS
+				}
+			}
+			remove_ideas = unstableOS 
+			}
+		
+			if = {
+			limit = {
+				VEG = {
+					has_idea = stableOS
+				}
+			}
+			remove_ideas = stableOS
+			}
+		add_ideas = national_spirit_rejection_of_automation
+		add_ideas = cultofmars
+		country_event = { id = nf_couriersix.667 }
+		}
+	}
+	focus = {
+		id = veg_renderuntocaesar2
+		icon = GFX_goal_legion_generic_infantry
+		cost = 8.6
+		prerequisite = {
+			focus = veg_renderuntocaesar1
+		}
+		x = -11
+		y = 9
+		completion_reward = {
+		211 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			add_resource = {
+				type = metal
+				amount = 15
+				state = 211
+			}
+			add_resource = {
+				type = water
+				amount = 10
+				state = 211
+			}
+			add_equipment_to_stockpile = {
+				type = melee_equipment_3
+				amount = 500
+				producer = CES
+			}
+			add_tech_bonus = {
+			bonus = 0.5
+			uses = 5
+			category = infantry_tech
+			}
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = veg_renderuntocaesar3
+		icon = GFX_goal_legion_praetorian_guard
+		cost = 8.6
+		prerequisite = {
+			focus = veg_renderuntocaesar2
+		}
+		prerequisite = { focus = veg_volare focus = veg_mojavebosdestroy focus = veg_ohmypapa }
+		x = -11
+		y = 10
+		completion_reward = {
+		create_country_leader  = {
+			name = "Legatus Occidens"
+			desc = "Legatus Occidens_DESC"
+			picture = "gfx/leaders/Portrait_CourierLegion.dds"
+			expire = "3000.1.1"
+			ideology = militarist_oligarchy }
+		add_manpower = 10000
+		add_political_power = 300
+		add_ideas = legateofthewest
+		}
+	}
+	focus = {
+		id = veg_renderuntocaesar4
+		icon = GFX_goal_legion_generic_focus
+		cost = 8.6
+		available = {
+			date > 2279.1.1
+		}
+		prerequisite = {
+			focus = veg_renderuntocaesar3
+		}
+		x = -11
+		y = 11
+		completion_reward = {
+		add_state_core = 253
+		add_state_core = 350
+		add_state_core = 163
+		add_state_core = 285
+		add_state_core = 551
+		}
+	}
+	focus = {
+		id = veg_wildcard1
+		icon = GFX_goal_VEG_Yes_Man
+		cost = 8.6
+		available = {
+		    has_idea = aceinthehole
+		}
+		prerequisite = {
+			focus = veg_ringadingding
+		}
+		mutually_exclusive = {
+			focus = veg_fortherepublic1
+			focus = veg_renderuntocaesar1
+		}
+		x = -7
+		y = 8
+		completion_reward = {
+		country_event = { id = nf_couriersix.8 }
+		}
+	}
+	focus = {
+		id = veg_wildcard2
+		icon = GFX_goal_VEG_Assassinate_House
+		cost = 8.6
+		prerequisite = {
+			focus = veg_wildcard1
+		}
+		x = -7
+		y = 9
+		completion_reward = {
+		country_event = { id = nf_couriersix.668 }
+		add_manpower = -1000
+		remove_ideas = dominoeffect
+		}
+	}
+	focus = {
+		id = veg_wildcard3
+		icon = GFX_goal_bos_study_securitron_software
+		cost = 8.6
+		prerequisite = {
+			focus = veg_wildcard2
+		}
+		x = -7
+		y = 10
+		completion_reward = {
+		add_manpower = 1000	
+		set_technology = { securitron_2_tech = 1 }
+		load_oob = vegassecuritronarmy1
+	    add_ideas = securitron_vault
+	  
+			if = {
+				limit = {
+					VEG = {
+						has_idea = robco
+					}
+				}
+				swap_ideas = {
+					remove_idea = robco
+					add_idea = securitron_vault
+				}
+				hidden_effect = {
+					set_country_flag = securitron_vault
+				}
+			}
+			if = {
+			limit = {
+				VEG = {
+					has_idea = unstableOS
+				}
+			}
+			swap_ideas = { remove_idea = unstableOS add_idea = platinumOS }	
+			}
+		
+			if = {
+			limit = {
+				VEG = {
+					has_idea = stableOS
+				}
+			}
+			swap_ideas = { remove_idea = stableOS add_idea = platinumOS }
+			}
+		}
+	}
+	focus = {
+		id = veg_wildcard4
+		icon = GFX_goal_generic_airbases_focus
+		cost = 8.6
+		available = {
+			date > 2279.1.1
+		}
+		prerequisite = {
+			focus = veg_wildcard3
+		}
+		x = -7
+		y = 11
+		completion_reward = {
+		remove_ideas = veg_command_from_afar
+		211 = {
+				add_resource = {
+					type = electricity
+					amount = 20
+				}
+			}
+		create_wargoal = {
+				target = NCR 
+				type = annex_everything
+			}
+		create_wargoal = {
+				target = CES 
+				type = annex_everything
+			}
+		create_wargoal = {
+				target = BOS 
+				type = annex_everything
+			}
+			set_rule = {
+				can_create_factions = yes
+			}
+		}
+	}
+	focus = {
+		id = veg_volare
+		icon = GFX_goal_generic_air_doctrines_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_wildcard1
+			focus = veg_fortherepublic1
+			focus = veg_renderuntocaesar2
+		}
+		x = -5
+		y = 8
+		completion_reward = {
+		create_wargoal = {
+				target = SKY
+				type = annex_everything
+			}
+			154 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+		set_technology = { scrap_bomber = 1 }
+		add_equipment_to_stockpile = {
+				type = strategic_bomber_equipment_1
+				amount = 10
+			}
+		air_experience = 100	
+		add_manpower = 500
+		}
+	}
+	focus = {
+		id = veg_ohmypapa
+		icon = GFX_goal_VEG_The_Khaganate
+		cost = 8.6
+		prerequisite = {
+			focus = veg_volare
+			focus = veg_wildcard1
+			focus = veg_fortherepublic2
+			focus = veg_renderuntocaesar2
+		}
+		x = -5
+		y = 9
+		completion_reward = {
+		create_wargoal = {
+				target = GRA
+				type = annex_everything
+			}
+		create_wargoal = {
+				target = FRI
+				type = annex_everything
+			}
+		annex_country = { target = KHA transfer_troops = yes }
+		add_state_core = 106
+		add_state_core = 12
+		add_manpower = 1000	
+		}
+	}
+	focus = {
+		id = veg_mojavebosdestroy
+		icon = GFX_goal_VEG_Broken_Steel
+		cost = 8.6
+		prerequisite = {
+			focus = veg_wildcard1
+			focus = veg_renderuntocaesar2
+		}
+		x = -5
+		y = 10
+		completion_reward = {
+		create_wargoal = {
+				target = MOJ
+				type = annex_everything
+			}
+		create_wargoal = {
+				target = FIE
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = veg_arizonakiller
+		icon = GFX_focus_hun_assassinate_horthy
+		cost = 8.6
+		prerequisite = {
+			focus = veg_wildcard4
+			focus = veg_renderuntocaesar4
+		}
+		mutually_exclusive = {
+			focus = veg_youllknowitwhenithappens
+		}
+		x = -10
+		y = 12
+		completion_reward = {
+		add_ideas = arizonakiller
+		}
+	}
+	focus = {
+		id = veg_youllknowitwhenithappens
+		icon = GFX_goal_generic_communcation_focus
+		cost = 8.6
+		prerequisite = {
+			focus = veg_wildcard4
+			focus = veg_fortherepublic4
+		}
+		mutually_exclusive = {
+			focus = veg_arizonakiller
+		}
+		x = -8
+		y = 12
+		completion_reward = {
+		add_ideas = youllknowitwhenithappens
+		}
+	}
+	focus = {
+		id = veg_battleforhooverdam1
+		icon = GFX_goal_VEG_Vegas_for_the_People
+		cost = 8.6
+		available = {
+		    has_idea = aceinthehole
+			NOT = { country_exists = NCR }
+			NOT = { country_exists = CES }
+		}
+		prerequisite = {
+			focus = veg_arizonakiller
+			focus = veg_youllknowitwhenithappens
+		}
+		x = -7
+		y = 13
+		completion_reward = {
+		country_event = { id = nf_couriersix.12 }
+		}
+	}
+	focus = {
+		id = veg_battleforhooverdam2
+		icon = GFX_goal_support_democracy
+		cost = 8.6
+		available = {
+		    has_idea = crockersinvitation
+			NOT = { country_exists = CES }
+		}
+		prerequisite = {
+			focus = veg_youllknowitwhenithappens
+		}
+		x = -9
+		y = 13
+		completion_reward = {
+		country_event = { id = nf_couriersix.10 }
+		}
+	}
+	focus = {
+		id = veg_battleforhooverdam3
+		icon = GFX_goal_legion_new_thesis
+		cost = 8.6
+		available = {
+		    has_idea = markofcaesar
+			NOT = { country_exists = NCR }
+		}
+		prerequisite = {
+			focus = veg_arizonakiller
+		}
+		x = -11
+		y = 13
+		completion_reward = {
+		country_event = { id = nf_couriersix.11 }
+		}
+	}
+
+}

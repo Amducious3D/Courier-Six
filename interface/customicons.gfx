@@ -1,0 +1,11 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_goal_VEG_kickinthehead"
+		texturefile = "gfx/interface/goals/VEG_kickinthehead.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_VEG_goodspringsconflict"
+		texturefile = "gfx/interface/goals/VEG_goodspringsconflict.dds"
+	}
+}

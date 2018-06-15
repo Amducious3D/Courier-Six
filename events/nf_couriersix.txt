@@ -1,0 +1,297 @@
+﻿add_namespace = nf_couriersix
+
+country_event = {
+	id = nf_couriersix.1
+	title = nf_couriersix.1.t
+	desc = nf_couriersix.1.d
+	picture = GFX_event_generic_ruins_4
+
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_couriersix.1.a
+
+		add_ideas = dominoeffect
+	}
+	
+	
+}
+
+country_event = {
+	id = nf_couriersix.2
+	title = nf_couriersix.2.t
+	desc = nf_couriersix.2.d
+	picture = GFX_event_VEG_courierdug
+
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_couriersix.2.a
+
+		add_ideas = thecourierwhocheateddeath
+	}
+	
+	
+}
+
+country_event = {
+	id = nf_couriersix.3
+	title = nf_couriersix.3.t
+	desc = nf_couriersix.3.d
+	picture = GFX_event_generic_desert_1
+
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_couriersix.3.a
+
+		add_ideas = mojaveboogeyman
+	}
+	option = {
+		name = nf_couriersix.3.b
+
+		add_ideas = mojavemyth
+	}
+	option = {
+		name = nf_couriersix.3.c
+
+		add_ideas = mojavelegend
+	}
+	
+	
+}
+
+country_event = {
+	id = nf_couriersix.4
+	title = nf_couriersix.4.t
+	desc = nf_couriersix.4.d
+	picture = GFX_event_VEG_tops
+
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_couriersix.4.a
+
+		country_event = { id = nf_couriersix.7 }
+	}
+	option = {
+		name = nf_couriersix.4.b
+
+		country_event = { id = nf_couriersix.6 }
+	}
+	option = {
+		name = nf_couriersix.4.c
+
+		country_event = { id = nf_couriersix.5 }
+	}
+	
+	
+}
+
+country_event = {
+	id = nf_couriersix.5
+	title = nf_couriersix.5.t
+	desc = nf_couriersix.5.d
+	picture = GFX_event_VEG_aceinthehole
+
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_couriersix.5.a
+		add_ideas = aceinthehole
+		
+	}
+	
+}
+
+country_event = {
+	id = nf_couriersix.6
+	title = nf_couriersix.6.t
+	desc = nf_couriersix.6.d
+	picture = GFX_event_VEG_markofcaesar
+
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_couriersix.6.a
+		add_ideas = markofcaesar
+		
+	}
+	
+}
+
+country_event = {
+	id = nf_couriersix.7
+	title = nf_couriersix.7.t
+	desc = nf_couriersix.7.d
+	picture = GFX_event_VEG_crockersnote
+
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_couriersix.7.a
+		add_ideas = crockersinvitation
+	}
+	
+}
+
+country_event = {
+	id = nf_couriersix.8
+	title = nf_couriersix.8.t
+	desc = nf_couriersix.8.d
+	picture = event_VEG_wall
+
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_couriersix.8.a
+		add_political_power = 50
+		
+		custom_effect_tooltip = load_gommorrahthugs
+		hidden_effect = { load_oob = gomorrahthugs }
+		
+		custom_effect_tooltip = load_topsthugs
+		hidden_effect = { load_oob = topsthugs }
+		
+		custom_effect_tooltip = load_ultraluxethugs
+		hidden_effect = { load_oob = ultraluxethugs }
+	}
+	
+}
+
+country_event = {
+	id = nf_couriersix.9
+	title = nf_couriersix.9.t
+	desc = nf_couriersix.9.d
+	picture = event_VEG_wall
+
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_couriersix.9.a
+	}
+	
+}
+
+country_event = {
+	id = nf_couriersix.666
+	title = nf_couriersix.666.t
+	desc = nf_couriersix.666.d
+	picture = GFX_event_VEG_courierncr
+
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_couriersix.666.a
+		kill_country_leader = yes
+		create_country_leader  = {
+			name = "The Courier"
+			desc = "TheCourier_DESC"
+			picture = "gfx/leaders/Portrait_CourierNCR.dds"
+			expire = "3000.1.1"
+			ideology = peoples_militia }
+		set_politics = {
+			ruling_party = people
+			elections_allowed = no }
+		add_popularity = { ideology = people popularity = 0.7 }	
+		add_ideas = sellout
+		remove_ideas = veg_command_from_afar
+	}
+	
+}
+
+country_event = {
+	id = nf_couriersix.667
+	title = nf_couriersix.667.t
+	desc = nf_couriersix.667.d
+	picture = GFX_event_VEG_courierlegion
+
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_couriersix.667.a
+		kill_country_leader = yes
+		create_country_leader  = {
+			name = "The Courier"
+			desc = "TheCourier_DESC"
+			picture = "gfx/leaders/Portrait_CourierIndependent.dds"
+			expire = "3000.1.1"
+			ideology = militarist_oligarchy }
+		set_politics = {
+			ruling_party = elites
+			elections_allowed = no }
+		add_popularity = { ideology = elites popularity = 0.7 }	
+		add_ideas = tyrant
+		remove_ideas = veg_command_from_afar
+	}
+	
+}
+
+country_event = {
+	id = nf_couriersix.668
+	title = nf_couriersix.668.t
+	desc = nf_couriersix.668.d
+	picture = event_VEG_wall
+
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_couriersix.668.a
+		kill_country_leader = yes
+		create_country_leader  = {
+			name = "The Courier"
+			desc = "TheCourier_DESC"
+			picture = "gfx/leaders/Portrait_CourierIndependent.dds"
+			expire = "3000.1.1"
+			ideology = oligarchy }
+		add_ideas = vain
+	}
+	
+}
+
+country_event = {
+	id = nf_couriersix.10
+	title = nf_couriersix.10.t
+	desc = nf_couriersix.10.d
+	picture = GFX_event_NCR_victory
+
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_couriersix.10.a
+		add_ideas = eureka
+	}
+	
+}
+
+country_event = {
+	id = nf_couriersix.11
+	title = nf_couriersix.11.t
+	desc = nf_couriersix.11.d
+	picture = GFX_event_CES_hoover_dam
+
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_couriersix.11.a
+		add_ideas = venividivici
+	}
+	
+}
+
+country_event = {
+	id = nf_couriersix.12
+	title = nf_couriersix.12.t
+	desc = nf_couriersix.12.d
+	picture = event_VEG_wall
+
+    is_triggered_only = yes
+    
+	option = {
+		name = nf_couriersix.12.a
+		add_ideas = nogodsnomasters
+	}
+	
+}
+
+#########################################################################

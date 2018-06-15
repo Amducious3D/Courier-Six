@@ -1,0 +1,27 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_event_VEG_courierlegion"
+		texturefile = "gfx/event_pictures/event_VEG_courierlegion.tga"
+	}
+	spriteType = {
+		name = "GFX_event_VEG_courierncr"
+		texturefile = "gfx/event_pictures/event_VEG_courierncr.tga"
+	}
+	spriteType = {
+		name = "GFX_event_VEG_courierdug"
+		texturefile = "gfx/event_pictures/event_VEG_courierdug.tga"
+	}
+	spriteType = {
+		name = "GFX_event_VEG_aceinthehole"
+		texturefile = "gfx/event_pictures/event_VEG_aceinthehole.tga"
+	}
+	spriteType = {
+		name = "GFX_event_VEG_crockersnote"
+		texturefile = "gfx/event_pictures/event_VEG_crockersnote.tga"
+	}
+	spriteType = {
+		name = "GFX_event_VEG_markofcaesar"
+		texturefile = "gfx/event_pictures/event_VEG_markofcaesar.tga"
+	}
+	
+}

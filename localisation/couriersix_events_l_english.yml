@@ -1,0 +1,73 @@
+﻿l_english:
+ 
+ nf_couriersix.1.t:0 "Report from Sunnyvale Expedition"
+ nf_couriersix.1.d:0 "Finally, after all these years, the Platinum Chip was found by my hired scavengers in Sunnyvale. In order for it to reach Vegas without delay, I will contract the Mojave Express to deliver multiple packages with multiple couriers to Vegas, with only one carrying the Platinum Chip. The rest will carry dummy packages to throw off any wasteland miscreants. I will assign Victor the securitron to place the orders at the Mojave Express office in Primm and ensure the courier with my chip arrives saftely."
+ nf_couriersix.1.a:0 "It's only a matter of time."
+ 
+ nf_couriersix.2.t:0 "Ain't That a Kick in the Head"
+ nf_couriersix.2.d:0 "The Courier carrying the Platinum Chip, Courier Six, was ambushed and shot in the head in Goodsprings by a third party. But miraculously, Victor dug the Courier out of his own grave that very same night and brought him to Doc Mitchell, where he shortly recovered!"
+ nf_couriersix.2.a:0 "I didn't account for this variable..."
+ 
+ nf_couriersix.3.t:0 "They Went That-a-Way"
+ nf_couriersix.3.d:0 "Apparently The Courier has amnesia, no doubt a result of his injury, and is making his way through the Mojave in pursuit of his killer. Along the way, he discovered the man who has the package is located somewhere in Vegas. Luckily for me, that's exactly where I need him. Unfortunately Victor could not make out who shot him, but I will make sure he nudges The Courier in the right direction."
+ nf_couriersix.3.a:0 "The Courier unleashed his wrath along the way."
+ nf_couriersix.3.b:0 "The Courier breezed through the Mojave like a ghost."
+ nf_couriersix.3.c:0 "The Courier utilized his finesse and cunning to reach Vegas"
+ 
+ nf_couriersix.4.t:0 "Ring-a-Ding-Ding!"
+ nf_couriersix.4.d:0 "The Courier arrived in The Strip and made his move, he confronted his killer in The Tops Casino and returns the favor."
+ nf_couriersix.4.a:0 "The assassin was a Legion Frumentarii!"
+ nf_couriersix.4.b:0 "The murderer was an NCR Ranger!"
+ nf_couriersix.4.c:0 "It doesn't matter. They are both responsible for this hell."
+ 
+ nf_couriersix.5.t:0 "Ace in the Hole"
+ nf_couriersix.5.d:0 "After killing the murderer in front of everyone, the leader of The Tops casino invited The Courier to his room upstairs. There, he introduced The Courier to Yes Man, a securitron reprogrammed to always be agreeable. He details an entire plan to overthrow Mr House by uploading Yes Man's neuro-computational matrix on the Lucky 38's mainframe, and also mentions a meeting with the Strip's Three Families to discuss the future of Vegas."
+ nf_couriersix.5.a:0 "I'll attend that meeting."
+ 
+ nf_couriersix.6.t:0 "Beware the Wrath of Caesar!"
+ nf_couriersix.6.d:0 "Shortly after exiting The Tops, The Courier was contacted by Vulpes Inculta of the Legion. Vulpes graced The Courier with an invitation for an audience with Caesar, who was astonished by his resolve. First, however; Caesar requires Mr. House out of the picture. Vulpes discloses to The Courier a plan to put The Courier in power of Vegas, where he and a team of Frumentarii agents will storm the Lucky 38 and set it ablaze."
+ nf_couriersix.6.a:0 "The NCR will pay for this. I will lead Vegas to victory."
+ 
+ nf_couriersix.7.t:0 "Don't Tread on the Bear!"
+ nf_couriersix.7.d:0 "An NCR courier relayed a message from Ambassador Crocker of the NCR who, desperate for The Courier's skill and experience, pleaded for a meeting with him. Upon meeting with Crocker, he details a plan to put The Courier in control of Vegas. To achieve this, The Courier will lead a team of NCR Military Police to breach the Lucky 38 and eliminate Mr House."
+ nf_couriersix.7.a:0 "The Legion threatens us all, I will defend Vegas."
+ 
+ nf_couriersix.8.t:0 "Meeting with the Three Families"
+ nf_couriersix.8.d:0 "The Courier arrived at the planned meeting between the Three Strip families. The topic of discussion was what to do about the NCR and Legion, and if Vegas should support either or rise up against them. The Courier spoke and convinced them to go through with his own plan. The Courier ordered the Three Families to mobilize and take the Lucky 38 by force. Once Mr House was eliminated, the Three Families would establish an oligarchy with the Courier as leader. They accepted the deal."
+ nf_couriersix.8.a:0 "That was easy."
+ 
+ nf_couriersix.9.t:0 "Meeting at Hidden Valley"
+ nf_couriersix.9.d:0 "The Courier arrived at the planned meeting between the three Strip families, and convinced them to go through with his own plan. The Courier ordered the Three Families to mobilize and take the Lucky 38 by force. Once Mr House was eliminated, the Three Families would establish an oligarchy with the Courier as leader. They accepted the deal."
+ nf_couriersix.9.a:0 "That was easy."
+ 
+ nf_couriersix.10.t:0 "Eureka!"
+ nf_couriersix.10.d:0 "Caesar's Legion has been defeated and democracy in the west can thrive once more!"
+ nf_couriersix.10.a:0 "Eureka!"
+ 
+ nf_couriersix.11.t:0 "Veni, Vidi, Vici"
+ nf_couriersix.11.d:0 "The New California Republic has been defeated and the degeneracy of the west has been snubbed out once and for all."
+ nf_couriersix.11.a:0 "Veni, Vidi, Vici"
+ 
+ nf_couriersix.12.t:0 "No Gods, No Masters"
+ nf_couriersix.12.d:0 "With Caesar's Legion and the New California Republic defeated, Vegas stands on it's own against anyone who threatens it."
+ nf_couriersix.12.a:0 "No Gods, No Masters"
+  
+
+ 
+ 
+ 
+ 
+ nf_couriersix.666.t:0 "Operation Mojave Freedom"
+ nf_couriersix.666.d:0 "The Courier assembles a small strike team of NCR Military Police from the NCR embassy in the Strip and storms the Lucky 38. Half the NCR MPs die in the assault, but the securitrons are defeated and House's control room breached. The Courier opens Mr House's containment pod and the old, decrepit man speaks, "Why have you... done this?... centuries of preparation... so much good, undone..." "
+ nf_couriersix.666.a:0 "The NCR asked me to get rid of you."
+ 
+ nf_couriersix.667.t:0 "The Fires of Vegas"
+ nf_couriersix.667.d:0 "The Courier partners with Vulpes Inculta and his strike team of elite Frumentarii agents to overthrow Mr House and burn the Lucky 38 to the ground. The Courier deceives Victor into temporarily disabling the security systems, allowing Vulpes' agents to storm the tower. All but the Courier and Vulpes are slaughtered in the attempt to make it past the securitron guards. Vulpes plants explosives along computer circuitry in the Penthouse, while The Courier breaks into the control room. The Courier opens Mr House's containment pod and the old, decrepit man speaks, "Why have you... done this?... centuries of preparation... so much good, undone..." "
+ nf_couriersix.667.a:0 "By Caesar's command, you will die."
+ 
+ nf_couriersix.668.t:0 "Three Families Coup d'état"
+ nf_couriersix.668.d:0 "Soldiers, thugs, and gangsters from the Three Families on the Strip assemble outside the Lucky 38. Mr House, anticipating hostilies, takes preemptive action by opening fire on them. The Three Families, with seemingly nothing to lose, stormed the Lucky 38 and fought for their survival against the securitron guards. Among the commotion, the Courier sneaks through the tower and reaches Mr House's control room, where he installs Yes Man's neuro-computational matrix on the Lucky 38's mainframe. The Courier opens Mr House's containment pod and the old, decrepit man speaks, "Why have you... done this?... centuries of preparation... so much good, undone..." "
+ nf_couriersix.668.a:0 "Yes Man needs you out of the way."
+ 
+
+ 

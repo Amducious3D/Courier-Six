@@ -1,0 +1,74 @@
+﻿l_english:
+ 
+ veg_couriersix: "Sunnyvale Expedition"
+ veg_couriersix_desc: "Two centuries ago, my Platinum Chip was lost in Sunnyvale during The Great War. It would cost me greatly, but I must hire some scavengers to find it as soon as possible."
+
+ veg_kickinthehead: "Courier Six"
+ veg_kickinthehead_desc: "The Courier carrying the Platinum Chip, Courier Six, just left Primm and is on his way to Vegas at this very moment. Hopefully he doesn't run into any complications during delivery."
+ 
+ veg_theywentthataway:0 "They Went That-a-Way"
+ veg_theywentthataway_desc:0 "Have Victor keep tabs on The Courier on his travels."
+ 
+ veg_ringadingding:0 "Ring-a-Ding-Ding"
+ veg_ringadingding_desc:0 "The Courier arrives at the strip and deals with his killer in The Tops casino."
+ 
+ veg_wildcard1:0 "Ace in the Hole"
+ veg_wildcard1_desc:0 "The Courier meets with the Three Strip Families to discuss the future of Vegas."
+ 
+ veg_wildcard2:0 "Change in Management"
+ veg_wildcard2_desc:0 "The Courier assembles an army of soldiers from the Three Families to gather outside the Lucky 38."
+ 
+ veg_wildcard3:0 "You and What Army?"
+ veg_wildcard3_desc:0 "Send an operative to The Fort to use the Platinum Chip and unlock Mr House's securitron vault."
+ 
+ veg_wildcard4:0 "Finishing Touches"
+ veg_wildcard4_desc:0 "Send an operative to the El Dorado substation to install the override module for Yes Man, granting him full control of securitrons well beyond the walls of Vegas."
+ 
+ veg_fortherepublic1:0 "Don't Tread on the Bear!"
+ veg_fortherepublic1_desc:0 "The Legion threatens us all. Ambassador Crocker's plan to overthrow Mr House and put The Courier in power must be accepted if democracy is to survive in the new world."
+ 
+ veg_fortherepublic2:0 "The King's Gambit"
+ veg_fortherepublic2_desc:0 "The NCR needs manpower to hold the Mojave. With The Courier in control of Vegas, he forces a peaceful end to the NCR-Kings conflict in Freeside. Using his favor with The King, he tasks him with starting a war propaganda campaign throughout Vegas."
+ 
+ veg_fortherepublic3:0 "Hidden Valley Treaty"
+ veg_fortherepublic3_desc:0 "The NCR is overextended. They are having trouble protecting our supply lines and roads from raiders and Legion guerrillas. We must sign a treaty with the remnants of the Mojave Chapter if the NCR is to continue expansion in The Mojave. In exchange for the Brotherhood Paladins to protect trade in the I-15, the NCR must promise to give up their salvaged power armor technology when the war is over."
+ 
+ veg_fortherepublic4:0 "For the Republic!"
+ veg_fortherepublic4_desc:0 "Vegas enters a full military alliance with the NCR to combat the Legion. The Courier uses his influence with the communities of Ashton and Hopeville to bring them into the fold."
+ 
+ veg_renderuntocaesar1:0 "Beware the Wrath of Caesar!"
+ veg_renderuntocaesar1_desc:0 "The NCR's cowardice led to this. Vulpes Inculta's plan to overthrow Mr House and put The Courier in power must be accepted to ensure humanity does not repeat the mistakes of the old world."
+ 
+ veg_renderuntocaesar2:0 "Render Unto Caesar"
+ veg_renderuntocaesar2_desc:0 "Caesar, after meeting with The Courier, asks him to destroy the Platinum Chip so it is never used to gain access to the securitron vault under The Fort. In addition to this, he suggests looking for allies in the coming wars, as well as destroying any potential enemies preemtively. Caesar will provide resources and equipment to aid Vegas in these efforts."
+ 
+ veg_renderuntocaesar3:0 "Legate of the West"
+ veg_renderuntocaesar3_desc:0 "Caesar, ecstatic with The Courier's work and loyalty, names him as his third Legate. Caesar graces The Courier with a unique set of armor, similar to the one worn by Lanius, and grants him control of a massive expeditionary force of inexperienced recruits and slaves. The best part of this assignment is that they can be relegated to whatever task is needed, but it will take considerable time to train them."
+ 
+ veg_renderuntocaesar4:0 "Et Tumor, Brute?"
+ veg_renderuntocaesar4_desc:0 "Caesar knows total war with the NCR is inevitable, but he also knows his time on Earth may end soon. In anticipation of this, Caesar assigns his Legate of the West two tasks, conquer the West, and pledge support to whomever he names as his successor."
+ 
+ veg_arizonakiller:0 "Arizona Killer"
+ veg_arizonakiller_desc:0 "A delegation of NCR officials is being sent to the front lines in the Mojave to deliver a motivational speech to the NCR soldiers stationed there. We should send an assassin to eliminate these officials and drive a stake into the heart of the NCR."
+ 
+ veg_youllknowitwhenithappens:0 "You'll Know It When It Happens"
+ veg_youllknowitwhenithappens_desc:0 "A delegation of NCR officials is being sent to the front lines in the Mojave to deliver a motivational speech to the NCR soldiers stationed there. We also intercepted critical information that The Legion is planning to assassinate them all in order to lower NCR morale. If we prevent this assassination, it will surely backfire for the Legion."
+ 
+ veg_volare:0 "Volare!"
+ veg_volare_desc:0 "Ensure the Boomers and the surrounding tribes support Vegas when the time comes."
+ 
+ veg_ohmypapa:0 "Oh My Papa"
+ veg_ohmypapa_desc:0 "Ensure the Khans and the surrounding tribes support Vegas when the time comes."
+ 
+ veg_mojavebosdestroy:0 "Destroy Hidden Valley"
+ veg_mojavebosdestroy_desc:0 "The remnants of the Mojave Chapter must be eliminated, as their philosophy is naturally in conflict with our own."
+ 
+ veg_battleforhooverdam1:0 "No Gods, No Masters"
+ veg_battleforhooverdam1_desc:0 "The NCR and Legion are defeated!"
+ 
+ veg_battleforhooverdam2:0 "Eureka!"
+ veg_battleforhooverdam2_desc:0 "The Legion is defeated!"
+ 
+ veg_battleforhooverdam3:0 "Veni, Vidi, Vici"
+ veg_battleforhooverdam3_desc:0 "The New California Republic is defeated!"
+ 
