@@ -1,0 +1,31 @@
+Courier Six is a submod for Old World Blues that incorporates the protagonist from New Vegas into the overall events and storyline of the mod. This is done through a new branch in the New Vegas focus tree.
+
+In Old World Blues, The Courier's major involvement in the war for Hoover Dam had been cut out, and some story elements rewritten to exclude The Courier (presumably so that the mod would fit the gameplay of HOI4). Well I re-rewrote The Courier back into mod, with a few key alterations to the New Vegas storyline to facilitate HOI4 gameplay:
+1. The Courier becomes the political leader of New Vegas, this means that-
+	-The Courier can only side with the NCR, Legion, or himself.
+	-Benny does not kill The Courier, instead; the killer is either an NCR Ranger or a Frumentarii agent, giving The Courier motivation to have Vegas join the opposite side's faction (or neither).
+	-The Courier does not have the freedom of a video game player (doing whatever at whatever time).
+2. The main quest structure of New Vegas had to be slightly altered to account for player choices and world events regarding the groups living in the Mojave and Vegas (such as the Three Families).
+2. The Platinum Chip will reach the Mojave from Sunnyvale at the player's discretion.
+3. The Courier does not necessarily get shot on October 11, 2281.
+
+Features not yet implemented:
+-nation flags 
+-idea icons 
+-national focus icons
+
+
+--Update Status--
+OWB ✓
+HOI4 ✓
+
+
+
+
+
+
+
+
+Courier Six - incorporates the protagonist from New Vegas into the overall events and storyline of the mod. This is done through a new branch in the New Vegas focus tree. https://steamcommunity.com/workshop/filedetails/?id=1407376661
+
+	
