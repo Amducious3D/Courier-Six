@@ -33,7 +33,7 @@ BAR = {
 	color_ui = rgb { 126 16 16 }
 }
 
-leg_west = {
+leg = {
 	color = rgb { 169 24 24 }
 	color_ui = rgb { 169 24 24 }
 }
