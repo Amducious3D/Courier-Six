@@ -2485,6 +2485,19 @@ focus_tree = {
 			NCR {
 				add_to_faction = VEG				
 			}
+			create_field_marshal = {
+				name = "The Courier"
+				portrait_path = "gfx/leaders/Portrait_CourierNCR.dds"
+				skill = 5
+				traits = {
+				
+				}
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 5
+			}
+			
 		remove_ideas = dominoeffect
 		if = {
 			limit = {
@@ -2670,6 +2683,18 @@ focus_tree = {
 			picture = "gfx/leaders/Portrait_CourierLegion.dds"
 			expire = "3000.1.1"
 			ideology = militarist_oligarchy }
+		create_field_marshal = {
+				name = "Legatus Occidens"
+				portrait_path = "gfx/leaders/Portrait_CourierLegion.dds"
+				skill = 5
+				traits = {
+				
+				}
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 5
+			}
 		set_cosmetic_tag = leg
 		add_manpower = 10000
 		add_political_power = 300
@@ -2726,6 +2751,18 @@ focus_tree = {
 		x = -7
 		y = 9
 		completion_reward = {
+		create_field_marshal = {
+				name = "The Courier"
+				portrait_path = "gfx/leaders/Portrait_CourierIndependent.dds"
+				skill = 5
+				traits = {
+				
+				}
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 5
+			}
 		country_event = { id = nf_couriersix.668 }
 		add_manpower = -1000
 		remove_ideas = dominoeffect
