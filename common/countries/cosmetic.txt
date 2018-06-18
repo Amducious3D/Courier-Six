@@ -1,0 +1,12 @@
+
+leg = {
+	color = rgb { 169 24 24 }
+	color_ui = rgb { 169 24 24 }
+}
+
+
+ncr = {
+	color = rgb { 0 51 160 }
+	color_ui = rgb { 0 51 160 }
+}
+ 
