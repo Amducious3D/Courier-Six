@@ -2479,7 +2479,7 @@ focus_tree = {
 			focus = veg_wildcard1
 			focus = veg_renderuntocaesar1
 		}
-		x = -9
+		x = -7
 		y = 8
 		completion_reward = {
 			NCR {
@@ -2527,7 +2527,7 @@ focus_tree = {
 		prerequisite = {
 			focus = veg_fortherepublic1
 		}
-		x = -9
+		x = -7
 		y = 9
 		completion_reward = {	
 		add_ideas = kingsarmy
@@ -2554,7 +2554,7 @@ focus_tree = {
 			focus = veg_fortherepublic2
 		}
 		prerequisite = { focus = veg_volare }
-		x = -9
+		x = -7
 		y = 10
 		completion_reward = {
 		add_political_power = -100
@@ -2571,7 +2571,7 @@ focus_tree = {
 		prerequisite = {
 			focus = veg_fortherepublic3
 		}
-		x = -9
+		x = -7
 		y = 11
 		completion_reward = {
 		annex_country = { target = HOP transfer_troops = yes }
@@ -2735,7 +2735,7 @@ focus_tree = {
 			focus = veg_fortherepublic1
 			focus = veg_renderuntocaesar1
 		}
-		x = -7
+		x = -9
 		y = 8
 		completion_reward = {
 		country_event = { id = nf_couriersix.8 }
@@ -2748,7 +2748,7 @@ focus_tree = {
 		prerequisite = {
 			focus = veg_wildcard1
 		}
-		x = -7
+		x = -9
 		y = 9
 		completion_reward = {
 		create_field_marshal = {
@@ -2775,7 +2775,7 @@ focus_tree = {
 		prerequisite = {
 			focus = veg_wildcard2
 		}
-		x = -7
+		x = -9
 		y = 10
 		completion_reward = {
 		add_manpower = 1000	
@@ -2826,7 +2826,7 @@ focus_tree = {
 		prerequisite = {
 			focus = veg_wildcard3
 		}
-		x = -7
+		x = -9
 		y = 11
 		completion_reward = {
 		remove_ideas = veg_command_from_afar
