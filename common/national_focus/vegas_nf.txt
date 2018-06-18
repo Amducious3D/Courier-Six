@@ -2441,7 +2441,7 @@ focus_tree = {
 	}
 	focus = {
 		id = veg_theywentthataway
-		icon = GFX_goal_NCR_Buyout
+		icon = GFX_goal_generic_large_scale_normal_industry_focus
 		cost = 8.6
 		prerequisite = {
 			focus = veg_kickinthehead
@@ -2935,6 +2935,65 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = veg_companion
+		icon = GFX_goal_NCR_Buyout
+		cost = 8.6
+		prerequisite = {
+			focus = veg_wildcard2
+			focus = veg_renderuntocaesar2
+			focus = veg_fortherepublic2
+		}
+		x = -5
+		y = 11
+completion_reward = {
+            if = {
+                limit = {
+                    has_idea = crockersinvitation
+                }
+            create_corps_commander = {
+				name = "Craig Boone"
+				portrait_path = "gfx/leaders/Portrait_Boone.dds"
+				skill = 4
+				traits = { }
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 5
+				}
+            }
+            if = {
+                limit = {
+                    has_idea = markofcaesar
+                }
+            create_corps_commander = {
+				name = "Raul Immortalium"
+				portrait_path = "gfx/leaders/Portrait_Raul.dds"
+				skill = 4
+				traits = { }
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 5
+				}
+            }
+            if = {
+                limit = {
+                    has_idea = aceinthehole
+                }
+            create_corps_commander = {
+				name = "Arcade Gannon"
+				portrait_path = "gfx/leaders/VEG/Portrait_Arcade.dds"
+				skill = 4
+				traits = { }
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 5
+				}
+            }
+		}
+	}
+	focus = {
 		id = veg_arizonakiller
 		icon = GFX_focus_hun_assassinate_horthy
 		cost = 8.6
@@ -2981,7 +3040,7 @@ focus_tree = {
 			focus = veg_arizonakiller
 			focus = veg_youllknowitwhenithappens
 		}
-		x = -7
+		x = -9
 		y = 13
 		completion_reward = {
 		country_event = { id = nf_couriersix.12 }
@@ -2998,7 +3057,7 @@ focus_tree = {
 		prerequisite = {
 			focus = veg_youllknowitwhenithappens
 		}
-		x = -9
+		x = -7
 		y = 13
 		completion_reward = {
 		country_event = { id = nf_couriersix.10 }
