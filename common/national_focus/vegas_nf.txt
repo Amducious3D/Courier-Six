@@ -2565,6 +2565,7 @@ focus_tree = {
 		annex_country = { target = ASH transfer_troops = yes }
 		add_state_core = 592
 		add_state_core = 13
+		set_cosmetic_tag = ncr
 			
 		}
 	}
