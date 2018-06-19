@@ -294,4 +294,87 @@ country_event = {
 	
 }
 
+country_event = {
+	id = nf_couriersix.13
+	title = nf_couriersix.13.t
+	desc = nf_couriersix.13.d
+	picture = event_VEG_wall
+
+    is_triggered_only = no
+    fire_only_once = yes
+	trigger = {
+		tag = VEG
+		has_completed_focus = veg_battleforhooverdam1
+	}
+	mean_time_to_happen = {
+		days = 60
+	}
+    
+    option = {
+		name = nf_couriersix.13.a
+		create_country_leader  = {
+			name = "The Courier"
+			desc = "The Courier_DESC"
+			picture = "gfx/leaders/Portrait_CourierIndependent.dds"
+			expire = "3000.1.1"
+			ideology = peoples_militia }
+		set_politics = {
+			ruling_party = people
+			elections_allowed = no }
+		add_popularity = {
+				ideology = people
+				popularity = 1.0
+			}
+		start_civil_war = {
+				ideology = elites
+				size = 0.65
+				capital = 252   
+			}
+		add_manpower = 25000
+		add_equipment_to_stockpile = {
+				type = ballistic_equipment_2
+				amount = 10000
+			}
+	}
+	
+	option = {
+		name = nf_couriersix.13.b
+		create_country_leader  = {
+			name = "The Courier"
+			desc = "The Courier_DESC"
+			picture = "gfx/leaders/Portrait_CourierEnclave.dds"
+			expire = "3000.1.1"
+			ideology = ideocracy }
+		set_politics = {
+			ruling_party = intellectuals
+			elections_allowed = no }
+		add_popularity = {
+				ideology = intellectuals
+				popularity = 1.0
+			}
+		start_civil_war = {
+				ideology = elites
+				size = 0.65
+				capital = 252
+			}
+		set_cosmetic_tag = swe
+		add_manpower = 2000 
+		set_technology = { power_armour_enclave2 = 1 }
+		add_equipment_to_stockpile = {
+				type = power_armour_enclave2
+				amount = 2000
+			}
+		set_technology = { tesla_weaponry = 1 }
+		add_equipment_to_stockpile = {
+				type = tesla_equipment_1
+				amount = 2000
+			}
+		set_technology = { vertiberd_gunship = 1 }
+		add_equipment_to_stockpile = {
+				type = vb_gunship_equipment
+				amount = 200
+			}
+	}
+}
+
 #########################################################################

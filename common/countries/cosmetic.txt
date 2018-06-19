@@ -9,4 +9,10 @@ ncr = {
 	color = rgb { 0 51 160 }
 	color_ui = rgb { 0 51 160 }
 }
- 
+
+swe = {
+	color = rgb { 0 45 106 }
+	color_ui = rgb { 0 45 106 }
+}
+
+

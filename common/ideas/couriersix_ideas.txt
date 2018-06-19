@@ -274,8 +274,8 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-			stability_factor = 0.05
-			war_support_factor = 0.05
+			stability_factor = 0.10
+			war_support_factor = 0.10
 			justify_war_goal_time = -1.00
 			guarantee_cost = -1.0
 			}
