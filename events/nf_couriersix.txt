@@ -327,7 +327,7 @@ country_event = {
 			}
 		start_civil_war = {
 				ideology = elites
-				size = 0.65
+				size = 0.50
 				capital = 252   
 			}
 		add_manpower = 25000
@@ -354,7 +354,7 @@ country_event = {
 			}
 		start_civil_war = {
 				ideology = elites
-				size = 0.65
+				size = 0.50
 				capital = 252
 			}
 		set_cosmetic_tag = swe
