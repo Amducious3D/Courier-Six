@@ -382,7 +382,7 @@ country_event = {
 			}
 		create_corps_commander = {
 				name = "Judah Kreger"
-				portrait_path = "gfx/leaders/VEG/Portrait_Judah.dds"
+				portrait_path = "gfx/leaders/Portrait_Judah.dds"
 				skill = 4
 				traits = { }
 				attack_skill = 2
@@ -392,7 +392,7 @@ country_event = {
 			}
 		create_corps_commander = {
 				name = "Orion Moreno"
-				portrait_path = "gfx/leaders/VEG/Portrait_Orion.dds"
+				portrait_path = "gfx/leaders/Portrait_Orion.dds"
 				skill = 4
 				traits = { }
 				attack_skill = 4
