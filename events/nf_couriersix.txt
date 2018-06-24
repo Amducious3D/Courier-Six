@@ -327,9 +327,12 @@ country_event = {
 			}
 		start_civil_war = {
 				ideology = elites
-				size = 0.50
-				capital = 252   
+				size = 0.40
+				keep_unit_leaders = {
+					1 2 3 4
+				}
 			}
+		set_cosmetic_tag = ncr
 		add_manpower = 25000
 		add_equipment_to_stockpile = {
 				type = ballistic_equipment_2
@@ -345,6 +348,7 @@ country_event = {
 			picture = "gfx/leaders/Portrait_CourierEnclave.dds"
 			expire = "3000.1.1"
 			ideology = ideocracy }
+		remove_ideas = theking
 		set_politics = {
 			ruling_party = intellectuals
 			elections_allowed = no }
@@ -354,8 +358,10 @@ country_event = {
 			}
 		start_civil_war = {
 				ideology = elites
-				size = 0.50
-				capital = 252
+				size = 0.40
+				keep_unit_leaders = {
+					1 2 3 4
+				}
 			}
 		set_cosmetic_tag = swe
 		add_manpower = 2000 
@@ -373,6 +379,26 @@ country_event = {
 		add_equipment_to_stockpile = {
 				type = vb_gunship_equipment
 				amount = 200
+			}
+		create_corps_commander = {
+				name = "Judah Kreger"
+				portrait_path = "gfx/leaders/VEG/Portrait_Judah.dds"
+				skill = 4
+				traits = { }
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 5
+				logistics_skill = 5
+			}
+		create_corps_commander = {
+				name = "Orion Moreno"
+				portrait_path = "gfx/leaders/VEG/Portrait_Orion.dds"
+				skill = 4
+				traits = { }
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 4
+				logistics_skill = 5
 			}
 	}
 }

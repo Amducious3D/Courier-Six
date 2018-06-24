@@ -2496,6 +2496,7 @@ focus_tree = {
 				defense_skill = 5
 				planning_skill = 5
 				logistics_skill = 5
+				id = 1
 			}
 			
 		remove_ideas = dominoeffect
@@ -2529,7 +2530,8 @@ focus_tree = {
 		}
 		x = -7
 		y = 9
-		completion_reward = {	
+		completion_reward = {
+		add_ideas = theking
 		add_ideas = kingsarmy
 		211 = {
 				add_extra_state_shared_building_slots = 3
@@ -2559,6 +2561,14 @@ focus_tree = {
 		completion_reward = {
 		add_political_power = -100
 		add_ideas = mojaveroads
+		211 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -2780,6 +2790,11 @@ focus_tree = {
 		completion_reward = {
 		add_manpower = 1000	
 		set_technology = { securitron_2_tech = 1 }
+		add_equipment_to_stockpile = {
+				type = medium_robot_equipment_4
+				amount = 5000
+			}
+		load_oob = vegassecuritronarmy1
 		load_oob = vegassecuritronarmy1
 	    add_ideas = securitron_vault
 	  
@@ -2846,6 +2861,14 @@ focus_tree = {
 			}
 		create_wargoal = {
 				target = BOS 
+				type = annex_everything
+			}
+		create_wargoal = {
+				target = DES 
+				type = annex_everything
+			}
+		create_wargoal = {
+				target = NCN
 				type = annex_everything
 			}
 			set_rule = {
@@ -2915,7 +2938,7 @@ focus_tree = {
 	}
 	focus = {
 		id = veg_mojavebosdestroy
-		icon = GFX_goal_VEG_Broken_Steel
+		icon = GFX_goal_generic_ideological_fury_focus
 		cost = 8.6
 		prerequisite = {
 			focus = veg_wildcard1
@@ -2924,12 +2947,11 @@ focus_tree = {
 		x = -5
 		y = 10
 		completion_reward = {
+		add_ideas = theking
+		annex_country = { target = FIE transfer_troops = yes }
+		puppet = MOJ
 		create_wargoal = {
-				target = MOJ
-				type = annex_everything
-			}
-		create_wargoal = {
-				target = FIE
+				target = MRA
 				type = annex_everything
 			}
 		}
@@ -2945,7 +2967,7 @@ focus_tree = {
 		}
 		x = -5
 		y = 11
-completion_reward = {
+		completion_reward = {
             if = {
                 limit = {
                     has_idea = crockersinvitation
@@ -2959,6 +2981,7 @@ completion_reward = {
 				defense_skill = 2
 				planning_skill = 4
 				logistics_skill = 5
+				id = 2
 				}
             }
             if = {
@@ -2974,6 +2997,7 @@ completion_reward = {
 				defense_skill = 2
 				planning_skill = 4
 				logistics_skill = 5
+				id = 3
 				}
             }
             if = {
@@ -2989,8 +3013,11 @@ completion_reward = {
 				defense_skill = 2
 				planning_skill = 4
 				logistics_skill = 5
+				id = 4
 				}
             }
+			add_manpower = 1000
+			add_political_power = 150
 		}
 	}
 	focus = {
