@@ -4,6 +4,9 @@ ideas = {
 			picture = generic_morale_bonus
 			allowed = {
 			}
+			allowed_civil_war = {
+				always = yes
+			}
 			removal_cost = -1
 			modifier = {
 				political_power_factor = 0.25
@@ -17,6 +20,9 @@ ideas = {
 			picture = generic_morale_bonus
 			allowed = {
 			}
+			allowed_civil_war = {
+				always = yes
+			}
 			removal_cost = -1
 			modifier = {
 			army_morale_factor = 0.1
@@ -28,6 +34,9 @@ ideas = {
 		mojaveboogeyman = {
 			picture = generic_morale_bonus
 			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
 			}
 			removal_cost = -1
 			modifier = {
@@ -41,6 +50,9 @@ ideas = {
 			picture = generic_morale_bonus
 			allowed = {
 			}
+			allowed_civil_war = {
+				always = yes
+			}
 			removal_cost = -1
 			modifier = {
 				army_speed_factor = 0.1
@@ -53,6 +65,9 @@ ideas = {
 			picture = generic_morale_bonus
 			allowed = {
 			}
+			allowed_civil_war = {
+				always = yes
+			}
 			removal_cost = -1
 			modifier = {
 				army_defence_factor = 0.1
@@ -64,6 +79,9 @@ ideas = {
 		selfless = {
 			picture = generic_morale_bonus
 			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
 			}
 			removal_cost = -1
 			modifier = {
@@ -78,6 +96,9 @@ ideas = {
 			picture = generic_morale_bonus
 			allowed = {
 			}
+			allowed_civil_war = {
+				always = yes
+			}
 			removal_cost = -1
 			modifier = {
 				local_resources_factor = 0.5
@@ -90,6 +111,9 @@ ideas = {
 		chaos = {
 			picture = generic_morale_bonus
 			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
 			}
 			removal_cost = -1
 			modifier = {
@@ -104,6 +128,9 @@ ideas = {
 		sellout = {
 			picture = generic_morale_bonus
 			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
 			}
 			removal_cost = -1
 			modifier = {
@@ -120,6 +147,9 @@ ideas = {
 			picture = generic_morale_bonus
 			allowed = {
 			}
+			allowed_civil_war = {
+				always = yes
+			}
 			removal_cost = -1
 			modifier = {
 			stability_factor = -0.10
@@ -133,6 +163,9 @@ ideas = {
 		vain = {
 			picture = generic_morale_bonus
 			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
 			}
 			removal_cost = -1
 			modifier = {
@@ -150,6 +183,9 @@ ideas = {
 			picture = generic_morale_bonus
 			allowed = {
 			}
+			allowed_civil_war = {
+				always = yes
+			}
 			removal_cost = -1
 			modifier = {
 			stability_factor = 0.15
@@ -164,6 +200,9 @@ ideas = {
 			picture = generic_morale_bonus
 			allowed = {
 			}
+			allowed_civil_war = {
+				always = yes
+			}
 			removal_cost = -1
 			targeted_modifier = { tag = NCR attack_bonus_against = 0.2 }
 			
@@ -173,6 +212,9 @@ ideas = {
 		youllknowitwhenithappens = {
 			picture = generic_morale_bonus
 			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
 			}
 			removal_cost = -1
 			targeted_modifier = { tag = CES attack_bonus_against = 0.2 }
@@ -184,6 +226,9 @@ ideas = {
 			picture = generic_morale_bonus
 			allowed = {
 			}
+			allowed_civil_war = {
+				always = yes
+			}
 			removal_cost = -1
 			targeted_modifier = { tag = NCR attack_bonus_against = 0.05 }
 		}
@@ -193,6 +238,9 @@ ideas = {
 		crockersinvitation = {
 			picture = generic_morale_bonus
 			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
 			}
 			removal_cost = -1
 			targeted_modifier = { tag = CES attack_bonus_against = 0.05 }
@@ -204,6 +252,9 @@ ideas = {
 			picture = generic_morale_bonus
 			allowed = {
 			}
+			allowed_civil_war = {
+				always = yes
+			}
 			removal_cost = -1
 			targeted_modifier = { tag = CES attack_bonus_against = 0.01 }
 			targeted_modifier = { tag = NCR attack_bonus_against = 0.01 }
@@ -214,6 +265,9 @@ ideas = {
 		kingsarmy = {
 			picture = generic_morale_bonus
 			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
 			}
 			removal_cost = -1
 			modifier = {
@@ -228,6 +282,9 @@ ideas = {
 			picture = generic_morale_bonus
 			allowed = {
 			}
+			allowed_civil_war = {
+				always = yes
+			}
 			removal_cost = -1
 			modifier = {
 			local_resources_factor = 0.10
@@ -241,6 +298,9 @@ ideas = {
 		eureka = {
 			picture = generic_morale_bonus
 			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
 			}
 			removal_cost = -1
 			modifier = {
@@ -257,6 +317,9 @@ ideas = {
 			picture = generic_morale_bonus
 			allowed = {
 			}
+			allowed_civil_war = {
+				always = yes
+			}
 			removal_cost = -1
 			modifier = {
 			consumer_goods_factor = -0.10
@@ -271,6 +334,9 @@ ideas = {
 		nogodsnomasters = {
 			picture = generic_morale_bonus
 			allowed = {
+			}
+			allowed_civil_war = {
+				always = yes
 			}
 			removal_cost = -1
 			modifier = {
