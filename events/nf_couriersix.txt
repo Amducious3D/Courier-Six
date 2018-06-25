@@ -367,7 +367,7 @@ country_event = {
 		add_manpower = 2000 
 		set_technology = { power_armour_enclave2 = 1 }
 		add_equipment_to_stockpile = {
-				type = power_armour_enclave2
+				type = enclave_power_armour_equipment_2
 				amount = 2000
 			}
 		set_technology = { tesla_weaponry = 1 }
