@@ -327,7 +327,6 @@ country_event = {
 			}
 		start_civil_war = {
 				ideology = elites
-				ruling_party = ruler
 				size = 0.40
 				keep_unit_leaders = {
 					1 2 3 4
@@ -359,7 +358,6 @@ country_event = {
 			}
 		start_civil_war = {
 				ideology = elites
-				ruling_party = ruler
 				size = 0.40
 				keep_unit_leaders = {
 					1 2 3 4
