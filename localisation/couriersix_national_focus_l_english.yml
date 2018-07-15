@@ -45,8 +45,8 @@
  veg_renderuntocaesar3:0 "Legate of the West"
  veg_renderuntocaesar3_desc:0 "Caesar, ecstatic with The Courier's work and loyalty, names him as his third Legate. Caesar graces The Courier with a unique set of armor, similar to the one worn by Lanius, and grants him control of a massive expeditionary force of inexperienced recruits and slaves. The best part of this assignment is that they can be relegated to whatever task is needed, but it will take considerable time to train them."
  
- veg_renderuntocaesar4:0 "Et Tumor, Brute?"
- veg_renderuntocaesar4_desc:0 "Caesar knows total war with the NCR is inevitable, but he also knows his time on Earth may end soon. In anticipation of this, Caesar assigns his Legate of the West two tasks, conquer the West, and pledge support to whomever he names as his successor."
+ veg_renderuntocaesar4:0 "Western Expedition"
+ veg_renderuntocaesar4_desc:0 "Caesar knows total war with the NCR is inevitable, but he also knows his time on Earth may end soon. In anticipation of this, Caesar assigns his Legate of the West a task, conquer the West."
  
  veg_arizonakiller:0 "Arizona Killer"
  veg_arizonakiller_desc:0 "A delegation of NCR officials is being sent to the front lines in the Mojave to deliver a motivational speech to the NCR soldiers stationed there. We should send an assassin to eliminate these officials and drive a stake into the heart of the NCR."
@@ -66,12 +66,26 @@
  veg_battleforhooverdam1:0 "No Gods, No Masters"
  veg_battleforhooverdam1_desc:0 "The NCR and Legion are defeated!"
  
+ veg_enclaveclaims:0 "Remanifest Destiny"
+ veg_enclaveclaims_desc:0 "Claim all North American territory as our own."
+ 
  veg_battleforhooverdam2:0 "Eureka!"
  veg_battleforhooverdam2_desc:0 "The Legion is defeated!"
+ 
+ veg_unitencr:0 "Run For President"
+ veg_unitencr_desc:0 "The NCR is overextended and on the verge of falling apart. A massive reform is in order and only the Courier can bring it about."
  
  veg_battleforhooverdam3:0 "Veni, Vidi, Vici"
  veg_battleforhooverdam3_desc:0 "The New California Republic is defeated!"
  
+ veg_legionunite:0 "Et Tumor, Brute?"
+ veg_legionunite_desc:0 "Caesar's rule is in question. We should put ourselves in a position to sieze any opportunity that presents itself."
+ 
  veg_companion:0 "Rewarding the Loyal"
  veg_companion_desc:0 "The Courier has had many loyal companions, it is time to reward one of them with a position within the hierarchy."
+ 
+ VEG_enclaveclaims_tooltip:0 "We core all states in America."
+ 
+ VEG_ettumorbrute_tooltip:0 "We core all states which the following nations have had cores in\n [CES.GetNameWithFlag]\n [NCR.GetNameWithFlag]\n [NCN.GetNameWithFlag]"
+
  

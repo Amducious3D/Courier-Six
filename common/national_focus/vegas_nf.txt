@@ -2713,7 +2713,7 @@ focus_tree = {
 	}
 	focus = {
 		id = veg_renderuntocaesar4
-		icon = GFX_goal_legion_generic_focus
+		icon = GFX_goal_legion_blacksmith
 		cost = 8.6
 		available = {
 			date > 2279.1.1
@@ -3157,6 +3157,25 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = veg_enclaveclaims
+		icon = GFX_goal_NEW_new_capital
+		cost = 17.2
+		prerequisite = {
+			focus = veg_battleforhooverdam1
+		}
+		x = -9
+		y = 14
+		completion_reward = {
+		set_cosmetic_tag = nna
+		custom_effect_tooltip = VEG_enclaveclaims_tooltip
+		hidden_effect = {
+			every_state = {
+					add_core_of = VEG
+					}
+		}
+		}
+	}
+	focus = {
 		id = veg_battleforhooverdam2
 		icon = GFX_goal_support_democracy
 		cost = 8.6
@@ -3174,6 +3193,28 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = veg_unitencr
+		icon = GFX_goal_NCR_Council_Hill
+		cost = 17.2
+		prerequisite = {
+			focus = veg_battleforhooverdam2
+		}
+		x = -7
+		y = 14
+		completion_reward = {
+		NCR = { change_tag_from = VEG }
+		NCR = { annex_country = { target = VEG transfer_troops = yes } }
+		NCR = { set_cosmetic_tag = nna }
+		NCR = { create_country_leader  = {
+			name = "The Courier"
+			desc = "TheCourier_DESC"
+			picture = "gfx/leaders/Portrait_CourierNew.dds"
+			expire = "3000.1.1"
+			ideology = constitutional_republic }
+			}
+		}
+	}
+	focus = {
 		id = veg_battleforhooverdam3
 		icon = GFX_goal_legion_new_thesis
 		cost = 8.6
@@ -3188,6 +3229,40 @@ focus_tree = {
 		y = 13
 		completion_reward = {
 		country_event = { id = nf_couriersix.11 }
+		}
+	}
+	focus = {
+		id = veg_legionunite
+		icon = GFX_goal_NCN_The_Prodigal_Son_Returns
+		cost = 17.2
+		prerequisite = {
+			focus = veg_battleforhooverdam3
+		}
+		x = -11
+		y = 14
+		completion_reward = {
+		create_wargoal = {
+				target = CES 
+				type = annex_everything
+			}
+		create_wargoal = {
+				target = NCN
+				type = annex_everything
+			}
+		custom_effect_tooltip = VEG_ettumorbrute_tooltip
+		hidden_effect = {
+		every_state = {
+					limit = {
+						NOT = { is_owned_by = VEG }
+						OR = { 
+						is_core_of = CES
+						is_core_of = NCR
+						is_core_of = NCN
+					}
+					}
+					add_core_of = VEG
+					}
+		}
 		}
 	}
 
